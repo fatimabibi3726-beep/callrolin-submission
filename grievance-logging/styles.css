@@ -4,21 +4,21 @@
    ============================================================ */
 
 :root {
-  --navy-950: #081C33;
-  --navy-900: #0B2740;
-  --navy-700: #173F63;
-  --ink-strong: #14293E;
-  --ink: #33495C;
-  --ink-muted: #4F6579;
+  --navy-950: #000000;
+  --navy-900: #111111;
+  --navy-700: #262626;
+  --ink-strong: #1A1A1A;
+  --ink: #333333;
+  --ink-muted: #5C5C5C;
 
-  --teal-800: #0B5A57;
-  --teal-700: #0F6E6A;
-  --teal-100: #DEF0ED;
-  --teal-50: #EDF7F5;
+  --teal-800: #B34D00;
+  --teal-700: #FF6A1A;
+  --teal-100: #FFE3D1;
+  --teal-50: #FFF3EA;
 
-  --gold-400: #EBBC4E;
-  --gold-200: #F8E7BD;
-  --gold-650: #A87B1F;
+  --gold-400: #FF8A47;
+  --gold-200: #FFD3B0;
+  --gold-650: #CC5500;
 
   --paper: #FAF5EC;
   --paper-deep: #F2EADA;
@@ -1496,7 +1496,14 @@ section[id] {
 }
 
 /* Real Callrolin logo colors */
-.brand-call { color: #ffffff; }
-.brand-rolin { color: #FF6A1A; }
-.brand--footer .brand-call { color: #ffffff; }
-.brand--footer .brand-rolin { color: #FF6A1A; }
+.brand-call { color: #FF6A1A; }
+.brand-rolin { color: #ffffff; }
+.brand--footer .brand-call { color: #FF6A1A; }
+.brand--footer .brand-rolin { color: #ffffff; }
+
+/* Real Callrolin logo image */
+img.brand-mark {
+  border-radius: 50%;
+  object-fit: contain;
+  flex-shrink: 0;
+}
