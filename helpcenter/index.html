@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Callrolin Voice Helpcenter — Every answer, straight from your official documents.</title>
+  <meta name="description" content="A RAG-powered voice helpcenter for institutions. The AI agent retrieves verified policy and FAQ passages from your official documents in real time and reads them back with citations — no improvisation.">
+  <meta name="theme-color" content="#0B2740">
+  <meta property="og:title" content="Callrolin Voice Helpcenter — Every answer, straight from your official documents.">
+  <meta property="og:description" content="Retrieval-augmented voice answers, grounded in your policy documents — with citations and a full audit trail.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://helpcenter.callrolin.com/">
+  <script>document.documentElement.classList.add("has-js");</script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230B2740'/%3E%3Cpath fill='%23EBBC4E' d='M10 5h8.2L23 9.8V25a2 2 0 01-2 2H10a2 2 0 01-2-2V7a2 2 0 012-2zm8 1.6V10h4.4L18 6.6zM12 14h9v1.8h-9V14zm0 4h9v1.8h-9V18z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Callrolin — home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <rect width="32" height="32" rx="8" fill="#0F6E6A"/>
+          <path fill="#fff" d="M11.2 8.6c.6-.6 1.6-.5 2.1.2l1.6 2.2c.4.6.4 1.4-.1 1.9l-1 1.1a12.7 12.7 0 004.2 4.2l1.1-1c.5-.5 1.3-.5 1.9-.1l2.2 1.6c.7.5.8 1.5.2 2.1l-1.3 1.3c-.7.7-1.7 1-2.6.7-5-1.6-9-5.6-10.6-10.6-.3-.9 0-1.9.7-2.6l1.6-1z"/>
+        </svg>
+        <span class="brand-name">Callrolin</span>
+        <span class="brand-product">Voice&nbsp;Helpcenter</span>
+      </a>
+
+      <nav class="site-nav" id="site-menu" aria-label="Page sections">
+        <ul>
+          <li><a href="#how-it-works">How it works</a></li>
+          <li><a href="#samples">Sample answers</a></li>
+          <li><a href="#accuracy">Accuracy &amp; audit</a></li>
+          <li><a class="btn btn-nav" href="#demo">Request a demo</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+        <span class="sr-only">Toggle navigation menu</span>
+        <svg class="icon-open" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M6.4 5 12 10.6 17.6 5 19 6.4 13.4 12l5.6 5.6-1.4 1.4L12 13.4 6.4 19 5 17.6 10.6 12 5 6.4z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-glow hero-glow--gold" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow--teal" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">helpcenter.callrolin.com · RAG-Powered Voice Helpcenter &amp; FAQ</p>
+          <h1 id="hero-title">Every answer, straight from <span class="highlight">your official documents.</span></h1>
+          <p class="lede">When someone calls your institution, our AI agent searches your verified policy documents in real time, retrieves the exact passage that answers the question, and reads it back — with the document and clause cited aloud. No improvisation, no outdated FAQs, no “I think so.”</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="#demo">Request a helpcenter demo</a>
+            <a class="phone-pill" href="tel:+18005550177">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.25c1.12.37 2.32.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.26.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+              <span class="phone-pill-text">
+                <span class="phone-pill-label">Try the demo line</span>
+                <span class="phone-pill-number">+1 (800) 555-0177</span>
+              </span>
+            </a>
+          </div>
+
+          <ul class="trust-row" aria-label="What every call gets">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+              Answers cite their source
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+              Documents stay authoritative
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+              Every call fully auditable
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" data-reveal style="--rd:.15s">
+          <div class="citation-card" role="img" aria-label="Mock live call: a caller asks about an appeal deadline, and the agent reads back the answer citing Property Tax Code section 12, clause 4">
+            <div class="citation-head">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              <span class="call-status">Live retrieval · Policy desk</span>
+              <svg class="head-shield" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2 4 5v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10V5l-8-3z"/></svg>
+            </div>
+
+            <p class="q-label">Caller asks</p>
+            <p class="q-text">“What is the deadline to appeal my property tax assessment — and is there a fee?”</p>
+
+            <hr class="qa-divider">
+
+            <p class="a-label">Agent reads back</p>
+            <p class="a-text">“There is no fee to file an appeal. You have thirty days from the date printed on your assessment notice to submit the appeal form.”</p>
+            <p class="cite-chip">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+              Property Tax Code · §12(4)
+            </p>
+
+            <p class="citation-foot">Answered from the retrieved passage — with its source.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem section section--white" aria-labelledby="problem-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">The problem we remove</p>
+          <h2 id="problem-title">A wrong answer on the phone is a liability.</h2>
+          <p class="section-sub">For institutions, misinformation over the phone carries real consequences — missed deadlines, wrong fees, denied eligibility — and the exposure lands on you.</p>
+        </div>
+
+        <div class="problem-grid">
+          <article class="problem-card problem-card--pain" data-reveal>
+            <svg class="problem-icon" viewBox="0 0 64 64" role="img" aria-labelledby="stale-icon-title">
+              <title id="stale-icon-title">A document marked with a warning sign</title>
+              <rect x="12" y="6" width="40" height="52" rx="4" fill="#FBF3EA" stroke="#A8502E" stroke-width="2.5"/>
+              <path d="M20 18h24M20 26h18M20 34h22M20 42h14" stroke="#D89B84" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="46" cy="46" r="11" fill="#A8502E"/>
+              <path d="M46 39.5v7" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="46" cy="50.5" r="1.9" fill="#fff"/>
+            </svg>
+            <h3>From memory &amp; stale FAQs</h3>
+            <p>Agents paraphrase policy from memory. FAQ pages lag behind the latest revision. Two agents give two different answers to the same question — and your institution carries the compliance exposure when misinformation reaches a customer.</p>
+          </article>
+
+          <div class="vs-badge" data-reveal style="--rd:.1s" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M4 11h12.2l-4.6-4.6L13 5l7 7-7 7-1.4-1.4 4.6-4.6H4z"/></svg>
+          </div>
+
+          <article class="problem-card problem-card--gain" data-reveal style="--rd:.2s">
+            <svg class="problem-icon" viewBox="0 0 64 64" role="img" aria-labelledby="grounded-icon-title">
+              <title id="grounded-icon-title">An official document with a verification shield</title>
+              <rect x="12" y="6" width="40" height="52" rx="4" fill="#DEF0ED" stroke="#0F6E6A" stroke-width="2.5"/>
+              <path d="M20 18h24M20 26h18M20 34h14" stroke="#7FB5AF" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="42" cy="44" r="12" fill="#0F6E6A"/>
+              <path d="m36.5 44 4 4 7.5-7.5" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+            <h3>From the official document</h3>
+            <p>The agent answers by retrieving the governing passage from your approved documents and reads it back with its citation. If the document hasn’t changed, neither does the answer.</p>
+          </article>
+        </div>
+
+        <ul class="risk-row" data-reveal style="--rd:.15s" aria-label="The cost of unverified answers">
+          <li>Compliance exposure</li>
+          <li>Regulatory penalties</li>
+          <li>Customer disputes</li>
+          <li>Erosion of trust</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="rag section" id="how-it-works" aria-labelledby="rag-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">How it works</p>
+          <h2 id="rag-title">Three quiet steps between question and answer.</h2>
+          <p class="section-sub">The pattern is called Retrieval-Augmented Generation (RAG). In plain terms: the agent may only speak from what it can find in your documents.</p>
+        </div>
+
+        <ol class="steps steps--three" data-reveal>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">1</span>
+            <svg class="step-icon" viewBox="0 0 24 24" role="img" aria-labelledby="step1-title"><title id="step1-title">Document being uploaded</title><path fill="currentColor" d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 7V3.5L17.5 9H13zm-1 4.2 2.3 2.3 1.4-1.4L11 9.6 6.3 14.2l1.4 1.4L10 13.2V20h2v-4.8z"/></svg>
+            <h3>Your documents go in</h3>
+            <p>Policy manuals, fee schedules, rulebooks and FAQs are uploaded into a private knowledge base that belongs to your institution alone.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">2</span>
+            <svg class="step-icon" viewBox="0 0 24 24" role="img" aria-labelledby="step2-title"><title id="step2-title">Grid of indexed sections</title><path fill="currentColor" d="M4 4h7v7H4V4zm9 0h7v7h-7V4zM4 13h7v7H4v-7zm9 0h7v7h-7v-7z"/></svg>
+            <h3>Every clause becomes findable</h3>
+            <p>Content is organised and indexed so any section — down to a single clause — can be located within seconds during a live call.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">3</span>
+            <svg class="step-icon" viewBox="0 0 24 24" role="img" aria-labelledby="step3-title"><title id="step3-title">Telephone with quoted speech</title><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.25c1.12.37 2.32.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.26.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/><path fill="currentColor" opacity=".45" d="M13 3h8v6a3 3 0 01-3 3h-1v-2h1a1 1 0 001-1V5h-6V3z"/></svg>
+            <h3>Exact answers on the call</h3>
+            <p>When someone asks, the agent finds the governing passage, reads it back clearly, and names the document and clause it came from.</p>
+          </li>
+        </ol>
+
+        <p class="integration-note" data-reveal style="--rd:.1s">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+          If the answer isn’t supported by your documents, the agent says so plainly instead of guessing.
+        </p>
+      </div>
+    </section>
+
+    <section class="ingestion section section--white" id="ingestion" aria-labelledby="ingestion-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Your knowledge, always current</p>
+          <h2 id="ingestion-title">Feed it the documents you already trust.</h2>
+          <p class="section-sub">No new content to write. The helpcenter speaks from the same rulebooks your compliance team already maintains.</p>
+        </div>
+
+        <div class="doc-flow" data-reveal>
+          <ul class="doc-stack" aria-label="Example source documents">
+            <li class="doc-card">
+              <span class="doc-type doc-type--pdf">PDF</span>
+              <span class="doc-info"><strong>Fee Schedule 2026</strong><em>v4 · revised Aug 2026</em></span>
+            </li>
+            <li class="doc-card">
+              <span class="doc-type doc-type--docx">DOCX</span>
+              <span class="doc-info"><strong>Deposit Terms &amp; Conditions</strong><em>v3.1 · effective Mar 2026</em></span>
+            </li>
+            <li class="doc-card">
+              <span class="doc-type doc-type--xlsx">XLSX</span>
+              <span class="doc-info"><strong>Admissions FAQ Matrix</strong><em>v2 · updated Jul 2026</em></span>
+            </li>
+            <li class="doc-card">
+              <span class="doc-type doc-type--web">WEB</span>
+              <span class="doc-info"><strong>Citizen Service Charter</strong><em>official portal page</em></span>
+            </li>
+          </ul>
+
+          <div class="flow-arrow" data-reveal style="--rd:.1s" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M4 11h12.2l-4.6-4.6L13 5l7 7-7 7-1.4-1.4 4.6-4.6H4z"/></svg>
+          </div>
+
+          <div class="kb-node" data-reveal style="--rd:.2s">
+            <svg class="kb-shield" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2 4 5v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10V5l-8-3zm-1.2 13.6-3.2-3.2 1.4-1.4 1.8 1.8 4.2-4.2 1.4 1.4-5.6 5.6z"/></svg>
+            <h3>Callrolin Knowledge Base</h3>
+            <ul class="kb-tags">
+              <li>Indexed</li>
+              <li>Versioned</li>
+              <li>Access-controlled</li>
+            </ul>
+            <p class="kb-note">Private to your institution. Only approved documents can be cited on a call.</p>
+          </div>
+        </div>
+
+        <div class="format-notes">
+          <p class="integration-note" data-reveal style="--rd:.1s">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 7V3.5L17.5 9H13zM8 14h8v2H8v-2zm0 4h8v2H8v-2z"/></svg>
+            Supported formats include PDF, Word, Excel spreadsheets, plain text and approved web pages.
+          </p>
+          <p class="integration-note" data-reveal style="--rd:.18s">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M13 3a9 9 0 00-9 9H1l3.9 3.9L9 12H6a7 7 0 117 7 6.9 6.9 0 01-4.9-2l-1.4 1.4A8.9 8.9 0 1013 3zm-1 5v5l4.3 2.5.7-1.2-3.5-2.1V8H12z"/></svg>
+            Upload a revision and calls pick it up automatically — versioned, with no rebuild or downtime.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="samples section" id="samples" aria-labelledby="samples-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">See it answered</p>
+          <h2 id="samples-title">One question. One citation. Zero guesswork.</h2>
+          <p class="section-sub">Pick an institution type to see how a hard question comes back — verbatim-grounded and cited.</p>
+        </div>
+
+        <div class="tabs-block" data-reveal>
+          <div class="tablist-wrap">
+            <div class="qa-tablist" role="tablist" aria-label="Institution type">
+              <button class="qa-tab" role="tab" id="tab-government" aria-controls="panel-government" aria-selected="true" type="button">Government</button>
+              <button class="qa-tab" role="tab" id="tab-banking" aria-controls="panel-banking" aria-selected="false" tabindex="-1" type="button">Banking</button>
+              <button class="qa-tab" role="tab" id="tab-education" aria-controls="panel-education" aria-selected="false" tabindex="-1" type="button">Education</button>
+            </div>
+          </div>
+
+          <div class="qa-panel" role="tabpanel" id="panel-government" aria-labelledby="tab-government" tabindex="0">
+            <article class="qa-card">
+              <p class="q-label">Caller asks</p>
+              <p class="q-text">“What is the deadline to appeal a property tax assessment, and is there a fee?”</p>
+              <hr class="qa-divider">
+              <p class="a-label">Agent reads back</p>
+              <p class="a-text">“There is no fee to file an appeal. You have thirty days from the date printed on your assessment notice to submit the appeal form.”</p>
+              <p class="cite-chip">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                Property Tax Code · §12(4)
+              </p>
+              <blockquote class="source-quote">
+                “An appeal under this section shall be filed within thirty (30) days of the notice of assessment. No fee shall be levied for filing an appeal.”
+                <footer>Property Tax Code, §12(4) · rev. Jan 2026</footer>
+              </blockquote>
+            </article>
+          </div>
+
+          <div class="qa-panel" role="tabpanel" id="panel-banking" aria-labelledby="tab-banking" tabindex="0" hidden>
+            <article class="qa-card">
+              <p class="q-label">Caller asks</p>
+              <p class="q-text">“My fixed deposit matures on a public holiday. When do I receive the funds?”</p>
+              <hr class="qa-divider">
+              <p class="a-label">Agent reads back</p>
+              <p class="a-text">“Maturity proceeds are credited on the next working day. Value dating runs from the original maturity date, so no interest is lost for the holiday.”</p>
+              <p class="cite-chip">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                Deposit Terms &amp; Conditions · Cl. 9.2
+              </p>
+              <blockquote class="source-quote">
+                “Where maturity falls on a holiday, proceeds shall be credited on the following business day, with value dating from the original maturity date.”
+                <footer>Deposit Terms &amp; Conditions, Cl. 9.2 · v3.1, Mar 2026</footer>
+              </blockquote>
+            </article>
+          </div>
+
+          <div class="qa-panel" role="tabpanel" id="panel-education" aria-labelledby="tab-education" tabindex="0" hidden>
+            <article class="qa-card">
+              <p class="q-label">Caller asks</p>
+              <p class="q-text">“I paid my semester fees yesterday. Can I still register late without a penalty?”</p>
+              <hr class="qa-divider">
+              <p class="a-label">Agent reads back</p>
+              <p class="a-text">“Yes. The late-registration penalty is waived when payment is confirmed within five working days of the registration close date.”</p>
+              <p class="cite-chip">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                Academic Regulations 2026 · Cl. 8.3(b)
+              </p>
+              <blockquote class="source-quote">
+                “The late-registration penalty shall be waived where fee payment is confirmed within five (5) working days of the close of registration.”
+                <footer>Academic Regulations 2026, Cl. 8.3(b)</footer>
+              </blockquote>
+            </article>
+          </div>
+        </div>
+
+        <p class="footnote" data-reveal style="--rd:.1s">Questions, documents and clauses shown above are illustrative examples for demonstration.</p>
+      </div>
+    </section>
+
+    <section class="accuracy section section--dark" id="accuracy" aria-labelledby="accuracy-title">
+      <div class="container accuracy-grid">
+        <div class="accuracy-copy" data-reveal>
+          <p class="eyebrow eyebrow--gold">Accuracy &amp; audit trail</p>
+          <h2 id="accuracy-title">Every sentence can be traced.</h2>
+          <p>Each answer carries its receipt: the document, the clause and the version it came from. Call records store which document revision was live at the time of the call, so any answer can be audited against its exact source months later — not reconstructed from memory.</p>
+          <p>Compliance teams review sampled calls against the original text in seconds, and every discrepancy becomes a document fix rather than a dispute.</p>
+
+          <ul class="audit-log" aria-label="Illustrative audit log entries">
+            <li>
+              <span class="log-time">14:02</span>
+              <span class="log-topic">Appeal deadline</span>
+              <span class="log-src">Property Tax Code §12(4)</span>
+              <span class="log-ok">✓ matched source</span>
+            </li>
+            <li>
+              <span class="log-time">09:41</span>
+              <span class="log-topic">FD holiday maturity</span>
+              <span class="log-src">Deposit T&amp;C Cl. 9.2</span>
+              <span class="log-ok">✓ matched source</span>
+            </li>
+            <li>
+              <span class="log-time">08:17</span>
+              <span class="log-topic">Late-registration waiver</span>
+              <span class="log-src">Academic Regs Cl. 8.3(b)</span>
+              <span class="log-ok">✓ matched source</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="stat-grid stat-grid--dark" data-reveal style="--rd:.15s">
+          <article class="stat-card">
+            <p class="stat-value">−45%<sup>*</sup></p>
+            <p class="stat-label">escalations tied to wrong information</p>
+            <p class="stat-desc">Fewer complaints escalate when callers hear the policy read verbatim — with the citation attached.</p>
+          </article>
+          <article class="stat-card">
+            <p class="stat-value">100%</p>
+            <p class="stat-label">answers carrying a document citation</p>
+            <p class="stat-desc">By design: the agent reads retrieved passages from your corpus — never from memory.</p>
+          </article>
+          <p class="footnote footnote--dark">*Illustrative placeholder figure shown for demonstration only — replace with your institution’s measured results.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band section" id="demo" aria-labelledby="cta-title">
+      <div class="container cta-inner" data-reveal>
+        <p class="eyebrow eyebrow--gold">Request a helpcenter demo</p>
+        <h2 id="cta-title">Put verified answers on every call.</h2>
+        <p>We’ll walk your service and compliance teams through a live retrieval call — using one of your own documents — and show the citation trail behind every answer.</p>
+
+        <form id="demo-form" class="demo-form" aria-label="Request a helpcenter demo">
+          <div class="demo-form-row">
+            <label for="df-name">Name</label>
+            <input id="df-name" name="name" type="text" required>
+          </div>
+          <div class="demo-form-row">
+            <label for="df-email">Email</label>
+            <input id="df-email" name="email" type="email" required>
+          </div>
+          <div class="demo-form-row">
+            <label for="df-message">Message (optional)</label>
+            <textarea id="df-message" name="message" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold btn-lg">Request a helpcenter demo</button>
+          <p id="demo-form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand--footer" href="#top" aria-label="Callrolin — back to top">
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <rect width="32" height="32" rx="8" fill="#EBBC4E"/>
+            <path fill="#0B2740" d="M11.2 8.6c.6-.6 1.6-.5 2.1.2l1.6 2.2c.4.6.4 1.4-.1 1.9l-1 1.1a12.7 12.7 0 004.2 4.2l1.1-1c.5-.5 1.3-.5 1.9-.1l2.2 1.6c.7.5.8 1.5.2 2.1l-1.3 1.3c-.7.7-1.7 1-2.6.7-5-1.6-9-5.6-10.6-10.6-.3-.9 0-1.9.7-2.6l1.6-1z"/>
+          </svg>
+          <span class="brand-name">Callrolin</span>
+        </a>
+        <p>Voice infrastructure that puts your institution’s official answers on every call — grounded, cited and auditable.</p>
+      </div>
+
+      <nav class="footer-products" aria-label="Callrolin products">
+        <h2 class="footer-heading">Explore Callrolin</h2>
+        <ul>
+          <li><a href="../grievance-logging/index.html">Grievance Logging</a></li>
+          <li><a href="#" aria-current="page">Helpcenter <span class="here-tag">this page</span></a></li>
+          <li><a href="#">Voice UX</a></li>
+          <li><a href="#">Inbound Intake</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h2 class="footer-heading">Reach us</h2>
+        <ul>
+          <li><a href="tel:+18005550177">+1 (800) 555-0177 <span class="here-tag">demo line</span></a></li>
+          <li><a href="mailto:demos@callrolin.com">demos@callrolin.com</a></li>
+          <li>helpcenter.callrolin.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Callrolin. All rights reserved.</p>
+      <p class="footer-tagline">Grounded in your documents. Answered with citations.</p>
+    </div>
+  </footer>
+
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Callrolin Grievance Line — Just call and talk. We’ll file the ticket.</title>
+  <meta name="description" content="File a complaint with a simple phone call. Callrolin’s AI agent turns an ordinary call into a validated, trackable grievance ticket — no forms, no apps, no logins.">
+  <meta name="theme-color" content="#0B2740">
+  <meta property="og:title" content="Callrolin Grievance Line — Just call and talk. We’ll file the ticket.">
+  <meta property="og:description" content="A normal phone call becomes a clean, structured, trackable complaint ticket. No forms needed.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://complaint.callrolin.com/">
+  <script>document.documentElement.classList.add("has-js");</script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230F6E6A'/%3E%3Cpath fill='%23fff' d='M11.2 8.6c.6-.6 1.6-.5 2.1.2l1.6 2.2c.4.6.4 1.4-.1 1.9l-1 1.1a12.7 12.7 0 004.2 4.2l1.1-1c.5-.5 1.3-.5 1.9-.1l2.2 1.6c.7.5.8 1.5.2 2.1l-1.3 1.3c-.7.7-1.7 1-2.6.7-5-1.6-9-5.6-10.6-10.6-.3-.9 0-1.9.7-2.6l1.6-1z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Callrolin — home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <rect width="32" height="32" rx="8" fill="#0F6E6A"/>
+          <path fill="#fff" d="M11.2 8.6c.6-.6 1.6-.5 2.1.2l1.6 2.2c.4.6.4 1.4-.1 1.9l-1 1.1a12.7 12.7 0 004.2 4.2l1.1-1c.5-.5 1.3-.5 1.9-.1l2.2 1.6c.7.5.8 1.5.2 2.1l-1.3 1.3c-.7.7-1.7 1-2.6.7-5-1.6-9-5.6-10.6-10.6-.3-.9 0-1.9.7-2.6l1.6-1z"/>
+        </svg>
+        <span class="brand-name">Callrolin</span>
+        <span class="brand-product">Grievance&nbsp;Line</span>
+      </a>
+
+      <nav class="site-nav" id="site-menu" aria-label="Page sections">
+        <ul>
+          <li><a href="#conversation">How it works</a></li>
+          <li><a href="#integration">From call to CRM</a></li>
+          <li><a href="#impact">Impact</a></li>
+          <li><a class="btn btn-nav" href="#demo">Request a demo</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+        <span class="sr-only">Toggle navigation menu</span>
+        <svg class="icon-open" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M6.4 5 12 10.6 17.6 5 19 6.4 13.4 12l5.6 5.6-1.4 1.4L12 13.4 6.4 19 5 17.6 10.6 12 5 6.4z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-glow hero-glow--gold" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow--teal" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">complaint.callrolin.com · Voice-driven grievance logging</p>
+          <h1 id="hero-title">Just call and talk. <span class="highlight">We’ll file the ticket.</span></h1>
+          <p class="lede">No forms, no apps, no passwords. Our AI voice agent chats with you like a person on a normal phone call — gently collecting <strong>who</strong>, <strong>what</strong>, <strong>when</strong> and <strong>where</strong>, double-checking every detail with you, and reading your ticket number back to you before hanging up.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="#demo">Request a grievance-logging demo</a>
+            <a class="phone-pill" href="tel:+18005550142">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.25c1.12.37 2.32.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.26.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+              <span class="phone-pill-text">
+                <span class="phone-pill-label">Try the demo line</span>
+                <span class="phone-pill-number">+1 (800) 555-0142</span>
+              </span>
+            </a>
+          </div>
+          <p class="hero-note">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+            Works on any phone — smart or basic. No internet required.
+          </p>
+        </div>
+
+        <div class="hero-visual" data-reveal style="--rd:.15s" role="img" aria-label="Illustration of a live call where an AI agent confirms a filed grievance ticket number to the caller">
+          <div class="call-card">
+            <div class="call-card-head">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              <span class="call-status">Live call · 00:47</span>
+              <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            </div>
+            <p class="bubble bubble-agent seq-item" style="--sd:.2s">That’s everything I need. Your grievance is logged — ticket number <strong>#48213</strong>.</p>
+            <ul class="chip-row" aria-label="Details captured during this call">
+              <li class="chip chip--who seq-item" style="--sd:.55s">Who ✓</li>
+              <li class="chip chip--what seq-item" style="--sd:.75s">What ✓</li>
+              <li class="chip chip--when seq-item" style="--sd:.95s">When ✓</li>
+              <li class="chip chip--where seq-item" style="--sd:1.15s">Where ✓</li>
+            </ul>
+            <p class="bubble bubble-caller seq-item" style="--sd:1.4s">So… it’s really filed? I didn’t have to fill anything?</p>
+            <p class="bubble bubble-agent seq-item" style="--sd:1.7s">Really filed. I’ll stay on the line while you write the number down.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem section section--white" aria-labelledby="problem-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">The problem we remove</p>
+          <h2 id="problem-title">Most complaints die inside the form.</h2>
+          <p class="section-sub">Long digital forms, logins and shaky connections stop people from ever filing — especially those who need grievance systems most.</p>
+        </div>
+
+        <div class="problem-grid">
+          <article class="problem-card problem-card--pain" data-reveal>
+            <svg class="problem-icon" viewBox="0 0 64 64" role="img" aria-labelledby="form-icon-title">
+              <title id="form-icon-title">A cluttered web form full of tiny fields</title>
+              <rect x="10" y="6" width="44" height="52" rx="4" fill="#FDF4E7" stroke="#A8502E" stroke-width="2.5"/>
+              <path d="M18 18h28M18 26h20M18 34h24M18 42h14" stroke="#D89B84" stroke-width="3" stroke-linecap="round"/>
+              <rect x="40" y="38" width="14" height="10" rx="2" fill="#A8502E"/>
+              <path d="m43 41 8 4m0-4-8 4" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <h3>The old way</h3>
+            <p>Tiny fields, mandatory accounts, “session expired”, pages that won’t load on weak data. Many citizens simply give up — and their grievance never exists.</p>
+          </article>
+
+          <div class="vs-badge" data-reveal style="--rd:.1s" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M4 11h12.2l-4.6-4.6L13 5l7 7-7 7-1.4-1.4 4.6-4.6H4z"/></svg>
+          </div>
+
+          <article class="problem-card problem-card--gain" data-reveal style="--rd:.2s">
+            <svg class="problem-icon" viewBox="0 0 64 64" role="img" aria-labelledby="phone-icon-title">
+              <title id="phone-icon-title">A simple telephone handset with sound waves</title>
+              <circle cx="32" cy="32" r="28" fill="#DEF0ED"/>
+              <path fill="#0F6E6A" d="M22.5 18.7c1.1-1.1 2.9-1 3.8.3l2.9 3.9c.7 1 .6 2.4-.3 3.3l-1.8 1.9a22.8 22.8 0 007.6 7.6l1.9-1.8c.9-.9 2.3-1 3.3-.3l3.9 2.9c1.3 1 1.4 2.8.3 3.8l-2.4 2.4c-1.2 1.2-3 1.7-4.6 1.2-9.1-2.9-16.3-10-19.2-19.2-.5-1.6 0-3.4 1.2-4.6l3.4-1.4z"/>
+              <path d="M43 20c1.9 1.9 3 4.4 3 7" stroke="#0F6E6A" stroke-width="3" stroke-linecap="round" fill="none"/>
+              <path d="M47.5 15.5c3.1 3.1 4.8 7.2 4.8 11.5" stroke="#0F6E6A" stroke-width="3" stroke-linecap="round" fill="none" opacity=".55"/>
+            </svg>
+            <h3>The Callrolin way</h3>
+            <p>If you can make a phone call, you can file a complaint. Talk naturally — our agent asks simple questions, one at a time.</p>
+          </article>
+        </div>
+
+        <ul class="audience-row" data-reveal style="--rd:.15s" aria-label="Designed for these groups">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 5.5A2.25 2.25 0 1112 1a2.25 2.25 0 010 4.5zM8 23v-7H6.5c-.8 0-1.3-.9-.9-1.6l2.2-4A3.5 3.5 0 0111 8.5h2a3.5 3.5 0 013.2 1.9l2.2 4c.4.7-.1 1.6-.9 1.6H16v7h-3v-6h-2v6H8z"/></svg>
+            Elderly citizens
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M3.3 2 22 20.7 20.7 22l-4-4a17 17 0 00-4.7-2.6L10 13.4a11.6 11.6 0 013 .4L9.6 10.4A15.7 15.7 0 004.6 12L1.5 8.9c1.2-.9 2.5-1.6 3.9-2.2L2 3.3 3.3 2zM12 21.5a2 2 0 110-4 2 2 0 010 4zM12 4c4 0 7.7 1.5 10.5 4.2l-2.2 2.2A11.9 11.9 0 0012 7c-.6 0-1.3 0-1.9.1L7.3 4.4A17.4 17.4 0 0112 4z"/></svg>
+            First-time or non-tech users
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.25c1.12.37 2.32.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.26.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+            Areas with weak connectivity
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="walkthrough section" id="conversation" aria-labelledby="conversation-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">How it works · The conversation</p>
+          <h2 id="conversation-title">One friendly call, start to finish</h2>
+          <p class="section-sub">This is a real transcript shape. While the caller is still speaking, every answer lands in a structured field — automatically.</p>
+        </div>
+
+        <div class="conversation-grid" data-reveal>
+          <div class="chat" role="group" aria-label="Mock transcript of a grievance call">
+            <div class="chat-head">
+              <span class="rec-dot" aria-hidden="true"></span>
+              Grievance line · call recording simulated
+            </div>
+
+            <p class="bubble bubble-agent seq-item" style="--sd:.05s">
+              <span class="avatar avatar-agent" aria-hidden="true">A</span>
+              Hello, CityWorks grievance desk — I’m Aria, the assistant. May I have your name?
+            </p>
+
+            <p class="bubble bubble-caller seq-item" style="--sd:.7s">
+              Ramesh Kumar.
+              <span class="avatar avatar-caller" aria-hidden="true">R</span>
+            </p>
+            <ul class="chip-row chip-row--caller seq-item" style="--sd:1.15s" aria-label="Captured field">
+              <li class="chip chip--who">Who · Ramesh Kumar</li>
+            </ul>
+
+            <p class="bubble bubble-agent seq-item" style="--sd:1.6s">
+              <span class="avatar avatar-agent" aria-hidden="true">A</span>
+              Thank you, Ramesh. What would you like to report?
+            </p>
+
+            <p class="bubble bubble-caller seq-item" style="--sd:2.3s">
+              The street light outside our house stopped working. The lane is pitch dark at night.
+              <span class="avatar avatar-caller" aria-hidden="true">R</span>
+            </p>
+            <ul class="chip-row chip-row--caller seq-item" style="--sd:2.75s" aria-label="Captured field">
+              <li class="chip chip--what">What · Street light not working</li>
+            </ul>
+
+            <p class="bubble bubble-agent seq-item" style="--sd:3.2s">
+              <span class="avatar avatar-agent" aria-hidden="true">A</span>
+              Got it. When did you first notice?
+            </p>
+
+            <p class="bubble bubble-caller seq-item" style="--sd:3.9s">
+              Last Monday evening.
+              <span class="avatar avatar-caller" aria-hidden="true">R</span>
+            </p>
+            <ul class="chip-row chip-row--caller seq-item" style="--sd:4.35s" aria-label="Captured field">
+              <li class="chip chip--when">When · Last Monday evening</li>
+            </ul>
+
+            <p class="bubble bubble-agent seq-item" style="--sd:4.8s">
+              <span class="avatar avatar-agent" aria-hidden="true">A</span>
+              And whereabouts is the light?
+            </p>
+
+            <p class="bubble bubble-caller seq-item" style="--sd:5.5s">
+              Right outside house 42, Rose Lane, Sector 7.
+              <span class="avatar avatar-caller" aria-hidden="true">R</span>
+            </p>
+            <ul class="chip-row chip-row--caller seq-item" style="--sd:5.95s" aria-label="Captured field">
+              <li class="chip chip--where">Where · House 42, Rose Lane, Sector 7</li>
+            </ul>
+
+            <p class="bubble bubble-agent seq-item" style="--sd:6.6s">
+              <span class="avatar avatar-agent" aria-hidden="true">A</span>
+              So that’s a broken street light outside house 42, Rose Lane, Sector 7 — dark since Monday evening. Did I get that right?
+            </p>
+
+            <p class="bubble bubble-caller seq-item" style="--sd:7.3s">
+              Yes, perfect!
+              <span class="avatar avatar-caller" aria-hidden="true">R</span>
+            </p>
+
+            <p class="bubble bubble-agent bubble-final seq-item" style="--sd:7.9s">
+              <span class="avatar avatar-agent" aria-hidden="true">A</span>
+              Wonderful — your ticket number is <strong>#48213</strong>. Keep it for any follow-up. Anything else before we hang up?
+            </p>
+          </div>
+
+          <aside class="record-panel" aria-label="Structured record captured live during the call">
+            <div class="record-panel-inner">
+              <h3 class="record-title">
+                Structured record
+                <span class="live-tag"><span class="live-dot" aria-hidden="true"></span>Captured live</span>
+              </h3>
+              <dl class="record-fields">
+                <div class="field seq-item" style="--sd:1.15s">
+                  <dt>Who</dt>
+                  <dd>Ramesh Kumar</dd>
+                </div>
+                <div class="field seq-item" style="--sd:2.75s">
+                  <dt>What</dt>
+                  <dd>Street light not working</dd>
+                </div>
+                <div class="field seq-item" style="--sd:4.35s">
+                  <dt>When</dt>
+                  <dd>Last Monday evening</dd>
+                </div>
+                <div class="field seq-item" style="--sd:5.95s">
+                  <dt>Where</dt>
+                  <dd>House 42, Rose Lane, Sector 7</dd>
+                </div>
+              </dl>
+              <p class="record-status seq-item" style="--sd:7.9s">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2 4 5v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10V5l-8-3zm-1.2 13.6-3.2-3.2 1.4-1.4 1.8 1.8 4.2-4.2 1.4 1.4-5.6 5.6z"/></svg>
+                Read back &amp; confirmed by caller
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="pipeline section section--white" id="integration" aria-labelledby="pipeline-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Behind the scenes</p>
+          <h2 id="pipeline-title">From a hello to a ticket in your system</h2>
+          <p class="section-sub">Four quiet steps happen during one ordinary phone call.</p>
+        </div>
+
+        <ol class="steps" data-reveal>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">1</span>
+            <svg class="step-icon" viewBox="0 0 24 24" role="img" aria-labelledby="step1-icon"><title id="step1-icon">Telephone handset</title><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.25c1.12.37 2.32.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.26.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+            <h3>The citizen calls</h3>
+            <p>A normal phone call to your grievance number. No app download, no login, no form.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">2</span>
+            <svg class="step-icon" viewBox="0 0 24 24" role="img" aria-labelledby="step2-icon"><title id="step2-icon">List being filled in</title><path fill="currentColor" d="M19 3h-4.2a3 3 0 00-5.6 0H5a2 2 0 00-2 2v16a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-7 0a1 1 0 110 2 1 1 0 010-2zM8 17H6v-2h2v2zm0-4H6v-2h2v2zm0-4H6V7h2v2zm10 8h-7v-2h7v2zm0-4h-7v-2h7v2zm0-4h-7V7h7v2z"/></svg>
+            <h3>Details become data</h3>
+            <p>The agent’s plain questions capture who, what, when and where as clean, structured fields.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">3</span>
+            <svg class="step-icon" viewBox="0 0 24 24" role="img" aria-labelledby="step3-icon"><title id="step3-icon">Shield with a check mark</title><path fill="currentColor" d="M12 2 4 5v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10V5l-8-3zm-1.2 13.6-3.2-3.2 1.4-1.4 1.8 1.8 4.2-4.2 1.4 1.4-5.6 5.6z"/></svg>
+            <h3>Checked &amp; confirmed</h3>
+            <p>Every detail is read back to the caller and confirmed out loud before anything is filed.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">4</span>
+            <svg class="step-icon" viewBox="0 0 24 24" role="img" aria-labelledby="step4-icon"><title id="step4-icon">Database pushed into a system</title><path fill="currentColor" d="M12 3c-4.4 0-8 1.3-8 3v3c0 1.7 3.6 3 8 3s8-1.3 8-3V6c0-1.7-3.6-3-8-3zm-8 9.2V15c0 1.7 3.6 3 8 3s8-1.3 8-3v-2.8c-1.9 1.1-4.8 1.6-8 1.6s-6.1-.5-8-1.6zM12 20c-3.2 0-6.1-.5-8-1.6V19c0 1.7 3.6 3 8 3s8-1.3 8-3v-.6c-1.9 1.1-4.8 1.6-8 1.6z"/></svg>
+            <h3>Ticket lands in your CRM</h3>
+            <p>A validated, trackable ticket is pushed straight into your existing complaint or ticketing system.</p>
+          </li>
+        </ol>
+
+        <p class="integration-note" data-reveal style="--rd:.1s">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+          Callrolin connects through secure APIs to the helpdesk you already run — commercial tools like Zendesk or Freshdesk, government grievance portals, or a custom CRM. No rip-and-replace.
+        </p>
+      </div>
+    </section>
+
+    <section class="token-moment section" id="ticket" aria-labelledby="token-title">
+      <div class="container token-grid">
+        <div class="token-copy" data-reveal>
+          <p class="eyebrow eyebrow--gold">The moment that matters</p>
+          <h2 id="token-title">It ends with a number, not a shrug.</h2>
+          <p>Before the call ends, the agent reads the reference number back, slowly and clearly, so the caller can write it down. That single habit changes everything: the grievance now has an identity the citizen can quote, track and follow up on.</p>
+          <p class="sms-note">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20 2H4a2 2 0 00-2 2v18l4-4h14a2 2 0 002-2V4a2 2 0 00-2-2zM7 9h2v2H7V9zm4 0h2v2h-2V9zm4 0h2v2h-2V9z"/></svg>
+            Optional: an SMS carrying the same reference number follows the call, for citizens who want it in writing.
+          </p>
+        </div>
+
+        <div class="ticket-wrap" data-reveal style="--rd:.15s">
+          <article class="ticket-card" role="img" aria-label="Mock ticket confirmation card showing grievance ticket number 48213 for Ramesh Kumar, street light outage at House 42, Rose Lane, Sector 7, status validated">
+            <header class="ticket-head">
+              Callrolin · Grievance Desk
+            </header>
+            <div class="ticket-body">
+              <p class="ticket-label">Your ticket number</p>
+              <p class="ticket-number">#48213</p>
+              <dl class="ticket-meta">
+                <div><dt>Name</dt><dd>Ramesh Kumar</dd></div>
+                <div><dt>Issue</dt><dd>Street light outage</dd></div>
+                <div><dt>Location</dt><dd>House 42, Rose Lane, Sector 7</dd></div>
+                <div><dt>Status</dt><dd class="status-ok">Validated ✓</dd></div>
+              </dl>
+              <div class="ticket-barcode" aria-hidden="true"></div>
+              <p class="ticket-foot">Quote this number on any follow-up call.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="impact section section--white" id="impact" aria-labelledby="impact-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Why it matters</p>
+          <h2 id="impact-title">Fewer lost complaints. Faster logging.</h2>
+        </div>
+
+        <div class="stat-grid">
+          <article class="stat-card" data-reveal>
+            <p class="stat-value">−72%<sup>*</sup></p>
+            <p class="stat-label">abandoned complaints</p>
+            <p class="stat-desc">Citizens give up far less often when filing takes a conversation instead of a web form.</p>
+          </article>
+          <article class="stat-card" data-reveal style="--rd:.12s">
+            <p class="stat-value">2m 40s<sup>*</sup></p>
+            <p class="stat-label">average time-to-log</p>
+            <p class="stat-desc">From “hello” to a validated ticket in the system — versus roughly ten minutes of form-filling.</p>
+          </article>
+        </div>
+        <p class="footnote" data-reveal style="--rd:.2s">*Illustrative placeholder figures shown for demonstration only — replace with your programme’s measured results.</p>
+      </div>
+    </section>
+
+    <section class="cta-band section" id="demo" aria-labelledby="cta-title">
+      <div class="container cta-inner" data-reveal>
+        <p class="eyebrow eyebrow--gold">Hear a sample complaint call</p>
+        <h2 id="cta-title">One demo call.<br>One clean ticket.</h2>
+        <p>We’ll play a real-shaped grievance call for your team and show exactly how it lands as structured, validated tickets in the system you already use.</p>
+
+        <form id="demo-form" class="demo-form" aria-label="Request a grievance-logging demo">
+          <div class="demo-form-row">
+            <label for="df-name">Name</label>
+            <input id="df-name" name="name" type="text" required>
+          </div>
+          <div class="demo-form-row">
+            <label for="df-email">Email</label>
+            <input id="df-email" name="email" type="email" required>
+          </div>
+          <div class="demo-form-row">
+            <label for="df-message">Message (optional)</label>
+            <textarea id="df-message" name="message" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold btn-lg">Request a grievance-logging demo</button>
+          <p id="demo-form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand--footer" href="#top" aria-label="Callrolin — back to top">
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <rect width="32" height="32" rx="8" fill="#EBBC4E"/>
+            <path fill="#0B2740" d="M11.2 8.6c.6-.6 1.6-.5 2.1.2l1.6 2.2c.4.6.4 1.4-.1 1.9l-1 1.1a12.7 12.7 0 004.2 4.2l1.1-1c.5-.5 1.3-.5 1.9-.1l2.2 1.6c.7.5.8 1.5.2 2.1l-1.3 1.3c-.7.7-1.7 1-2.6.7-5-1.6-9-5.6-10.6-10.6-.3-.9 0-1.9.7-2.6l1.6-1z"/>
+          </svg>
+          <span class="brand-name">Callrolin</span>
+        </a>
+        <p>Voice infrastructure that turns ordinary phone calls into structured, actionable records — for every citizen, on every phone.</p>
+      </div>
+
+      <nav class="footer-products" aria-label="Callrolin products">
+        <h2 class="footer-heading">Explore Callrolin</h2>
+        <ul>
+          <li><a href="#" aria-current="page">Grievance Logging <span class="here-tag">this page</span></a></li>
+          <li><a href="#">Voice UX</a></li>
+          <li><a href="#">Inbound Intake</a></li>
+          <li><a href="../helpcenter/index.html">Helpcenter</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h2 class="footer-heading">Reach us</h2>
+        <ul>
+          <li><a href="tel:+18005550142">+1 (800) 555-0142 <span class="here-tag">demo line</span></a></li>
+          <li><a href="mailto:demos@callrolin.com">demos@callrolin.com</a></li>
+          <li>complaint.callrolin.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Callrolin. All rights reserved.</p>
+      <p class="footer-tagline">Made for every phone. Made for every citizen.</p>
+    </div>
+  </footer>
+
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
