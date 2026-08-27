@@ -1494,3 +1494,9 @@ section[id] {
   min-height: 1.2em;
   font-size: 0.95rem;
 }
+
+/* Real Callrolin logo colors */
+.brand-call { color: #ffffff; }
+.brand-rolin { color: #FF6A1A; }
+.brand--footer .brand-call { color: #ffffff; }
+.brand--footer .brand-rolin { color: #FF6A1A; }

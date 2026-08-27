@@ -17,6 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -25,10 +26,11 @@
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Callrolin — home">
         <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-          <rect width="32" height="32" rx="8" fill="#0F6E6A"/>
-          <path fill="#fff" d="M11.2 8.6c.6-.6 1.6-.5 2.1.2l1.6 2.2c.4.6.4 1.4-.1 1.9l-1 1.1a12.7 12.7 0 004.2 4.2l1.1-1c.5-.5 1.3-.5 1.9-.1l2.2 1.6c.7.5.8 1.5.2 2.1l-1.3 1.3c-.7.7-1.7 1-2.6.7-5-1.6-9-5.6-10.6-10.6-.3-.9 0-1.9.7-2.6l1.6-1z"/>
+          <circle cx="16" cy="16" r="15" fill="#111111" stroke="#FF6A1A" stroke-width="1.5"/>
+          <circle cx="16" cy="16" r="5" fill="none" stroke="#FF6A1A" stroke-width="2"/>
+          <path d="M16 6v3M16 23v3M6 16h3M23 16h3M9.5 9.5l2 2M20.5 20.5l2 2M9.5 22.5l2-2M20.5 11.5l2-2" stroke="#FF6A1A" stroke-width="1.5" stroke-linecap="round"/>
         </svg>
-        <span class="brand-name">Callrolin</span>
+        <span class="brand-name"><span class="brand-call">Call</span><span class="brand-rolin">Rolin</span></span>
         <span class="brand-product">Voice&nbsp;Helpcenter</span>
       </a>
 
@@ -407,10 +409,11 @@
       <div class="footer-brand">
         <a class="brand brand--footer" href="#top" aria-label="Callrolin — back to top">
           <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-            <rect width="32" height="32" rx="8" fill="#EBBC4E"/>
-            <path fill="#0B2740" d="M11.2 8.6c.6-.6 1.6-.5 2.1.2l1.6 2.2c.4.6.4 1.4-.1 1.9l-1 1.1a12.7 12.7 0 004.2 4.2l1.1-1c.5-.5 1.3-.5 1.9-.1l2.2 1.6c.7.5.8 1.5.2 2.1l-1.3 1.3c-.7.7-1.7 1-2.6.7-5-1.6-9-5.6-10.6-10.6-.3-.9 0-1.9.7-2.6l1.6-1z"/>
+            <circle cx="16" cy="16" r="15" fill="#111111" stroke="#FF6A1A" stroke-width="1.5"/>
+            <circle cx="16" cy="16" r="5" fill="none" stroke="#FF6A1A" stroke-width="2"/>
+            <path d="M16 6v3M16 23v3M6 16h3M23 16h3M9.5 9.5l2 2M20.5 20.5l2 2M9.5 22.5l2-2M20.5 11.5l2-2" stroke="#FF6A1A" stroke-width="1.5" stroke-linecap="round"/>
           </svg>
-          <span class="brand-name">Callrolin</span>
+          <span class="brand-name"><span class="brand-call">Call</span><span class="brand-rolin">Rolin</span></span>
         </a>
         <p>Voice infrastructure that puts your institution’s official answers on every call — grounded, cited and auditable.</p>
       </div>
