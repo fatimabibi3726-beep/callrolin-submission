@@ -154,13 +154,18 @@
       // Also send an email notification via EmailJS
       if (window.emailjs) {
         try {
-          window.emailjs.init(EMAILJS_PUBLIC_KEY);
-          await window.emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
-            name,
-            email,
-            message: message || "(no message provided)",
-            title: "Helpcenter demo request",
-          });
+          window.emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+          await window.emailjs.send(
+            EMAILJS_SERVICE_ID,
+            EMAILJS_TEMPLATE_ID,
+            {
+              name,
+              email,
+              message: message || "(no message provided)",
+              title: "Helpcenter demo request",
+            },
+            { publicKey: EMAILJS_PUBLIC_KEY }
+          );
         } catch (emailErr) {
           console.error("EmailJS error:", emailErr);
         }
