@@ -8,6 +8,8 @@
     const tabSignup = document.getElementById("tab-signup");
     const panelLogin = document.getElementById("panel-login");
     const panelSignup = document.getElementById("panel-signup");
+    const authTitle = document.getElementById("auth-title");
+    const authSubtitle = document.getElementById("auth-subtitle");
 
     function showTab(which) {
       const loginActive = which === "login";
@@ -15,8 +17,12 @@
       tabSignup.classList.toggle("is-active", !loginActive);
       tabLogin.setAttribute("aria-selected", String(loginActive));
       tabSignup.setAttribute("aria-selected", String(!loginActive));
-      panelLogin.hidden = !loginActive;
-      panelSignup.hidden = loginActive;
+      panelLogin.classList.toggle("is-visible", loginActive);
+      panelSignup.classList.toggle("is-visible", !loginActive);
+      authTitle.textContent = loginActive ? "Welcome back" : "Create your account";
+      authSubtitle.textContent = loginActive
+        ? "Log in to your Callrolin account"
+        : "Sign up to get started with Callrolin";
     }
 
     tabLogin.addEventListener("click", () => showTab("login"));

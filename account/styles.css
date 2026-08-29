@@ -2,20 +2,24 @@
   --orange: #FF6A1A;
   --orange-light: #FF9F5C;
   --black: #0A0A0A;
-  --card: #151515;
-  --line: #2A2A2A;
-  --text: #F0EDEA;
-  --text-muted: #B8B0A8;
+  --card: #161616;
+  --card-border: #2A2A2A;
+  --field: #0F0F0F;
+  --text: #F5F1ED;
+  --text-muted: #A9A099;
 }
 
 * { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+}
 
 body {
   margin: 0;
   font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
   background: var(--black);
   color: var(--text);
-  min-height: 100vh;
 }
 
 img.brand-mark {
@@ -27,24 +31,25 @@ img.brand-mark {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.55rem;
   text-decoration: none;
   font-weight: 800;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
+  letter-spacing: -0.01em;
 }
 
 .brand-call { color: var(--orange); }
 .brand-rolin { color: #ffffff; }
 .brand-product {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--orange-light);
   background: rgba(255,106,26,0.15);
-  padding: 0.25rem 0.6rem;
+  padding: 0.25rem 0.55rem;
   border-radius: 999px;
-  margin-left: 0.3rem;
+  margin-left: 0.35rem;
 }
 
 /* ==== Auth page ==== */
@@ -54,28 +59,57 @@ img.brand-mark {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  padding: 2rem 1rem;
+  gap: 2.5rem;
+  padding: 3rem 1.25rem;
+  position: relative;
+  overflow: hidden;
   background:
-    radial-gradient(ellipse 80% 60% at 20% 10%, rgba(255,106,26,0.25) 0%, transparent 55%),
-    radial-gradient(ellipse 70% 60% at 85% 90%, rgba(120,20,10,0.3) 0%, transparent 60%),
+    radial-gradient(ellipse 70% 55% at 18% 15%, rgba(255,106,26,0.30) 0%, transparent 60%),
+    radial-gradient(ellipse 65% 55% at 85% 20%, rgba(255,106,26,0.16) 0%, transparent 60%),
+    radial-gradient(ellipse 70% 60% at 50% 100%, rgba(120,20,10,0.35) 0%, transparent 65%),
     #000000;
 }
 
+.auth-page .brand {
+  position: relative;
+  z-index: 1;
+  font-size: 1.4rem;
+}
+
 .auth-card {
+  position: relative;
+  z-index: 1;
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
   background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  padding: 1.75rem;
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  padding: 2rem 1.85rem 2.25rem;
+  box-shadow: 0 30px 60px -20px rgba(0,0,0,0.6);
+}
+
+.auth-card h1 {
+  margin: 0 0 0.35rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.auth-card .auth-subtitle {
+  margin: 0 0 1.5rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-align: center;
 }
 
 .auth-tabs {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.25rem;
   margin-bottom: 1.5rem;
-  border-bottom: 1px solid var(--line);
+  background: var(--field);
+  border: 1px solid var(--card-border);
+  border-radius: 999px;
+  padding: 0.25rem;
 }
 
 .auth-tab {
@@ -84,48 +118,55 @@ img.brand-mark {
   border: none;
   color: var(--text-muted);
   font-family: inherit;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   font-weight: 700;
-  padding: 0.75rem 0.5rem;
+  padding: 0.55rem 0.5rem;
   cursor: pointer;
-  border-bottom: 2px solid transparent;
+  border-radius: 999px;
+  transition: background 0.15s ease, color 0.15s ease;
 }
 
 .auth-tab.is-active {
-  color: var(--orange);
-  border-bottom-color: var(--orange);
+  color: #ffffff;
+  background: var(--orange);
 }
 
 .auth-form {
-  display: flex;
+  display: none;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 0.35rem;
+}
+
+.auth-form.is-visible {
+  display: flex;
 }
 
 .auth-form label {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 600;
-  margin-top: 0.6rem;
+  margin-top: 0.65rem;
   color: var(--text-muted);
 }
 
 .auth-form input {
-  padding: 0.65rem 0.8rem;
-  border-radius: 8px;
-  border: 1px solid var(--line);
-  background: #0F0F0F;
+  padding: 0.7rem 0.85rem;
+  border-radius: 10px;
+  border: 1px solid var(--card-border);
+  background: var(--field);
   color: var(--text);
   font: inherit;
+  font-size: 0.95rem;
+  transition: border-color 0.15s ease;
 }
 
 .auth-form input:focus {
-  outline: 2px solid var(--orange);
-  outline-offset: 1px;
+  outline: none;
+  border-color: var(--orange);
 }
 
 .btn-auth {
-  margin-top: 1.25rem;
-  padding: 0.75rem 1rem;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1rem;
   border-radius: 999px;
   border: none;
   background: var(--orange);
@@ -134,15 +175,18 @@ img.brand-mark {
   font-weight: 800;
   font-size: 0.95rem;
   cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease;
 }
 
 .btn-auth:hover { background: var(--orange-light); }
+.btn-auth:active { transform: scale(0.98); }
 .btn-auth:disabled { opacity: 0.6; cursor: not-allowed; }
 
 .auth-status {
   min-height: 1.2em;
   font-size: 0.85rem;
-  margin: 0.6rem 0 0;
+  margin: 0.75rem 0 0;
+  text-align: center;
   color: var(--text-muted);
 }
 
@@ -155,7 +199,7 @@ img.brand-mark {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--card-border);
   background: var(--card);
 }
 
@@ -168,14 +212,15 @@ img.brand-mark {
 }
 
 .btn-logout {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.1rem;
   border-radius: 999px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--card-border);
   background: transparent;
   color: var(--text);
   font-family: inherit;
   font-weight: 600;
   cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease;
 }
 
 .btn-logout:hover { border-color: var(--orange); color: var(--orange); }
@@ -183,40 +228,43 @@ img.brand-mark {
 .admin-main {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 2rem 1.5rem;
+  padding: 2.5rem 1.5rem;
 }
 
 .admin-main h1 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  margin-bottom: 1.25rem;
+  font-weight: 800;
 }
 
 .table-wrap {
   overflow-x: auto;
-  border: 1px solid var(--line);
-  border-radius: 12px;
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
 }
 
 .admin-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
 }
 
 .admin-table th,
 .admin-table td {
   text-align: left;
-  padding: 0.75rem 1rem;
-  border-bottom: 1px solid var(--line);
+  padding: 0.8rem 1.1rem;
+  border-bottom: 1px solid var(--card-border);
   white-space: nowrap;
 }
+
+.admin-table tr:last-child td { border-bottom: none; }
 
 .admin-table th {
   background: var(--card);
   color: var(--orange-light);
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   letter-spacing: 0.05em;
 }
 
@@ -225,6 +273,10 @@ img.brand-mark {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: normal;
+}
+
+.admin-table tbody tr:hover {
+  background: rgba(255,106,26,0.05);
 }
 
 #admin-loading,

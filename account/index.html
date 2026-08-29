@@ -15,38 +15,41 @@
 <body>
   <div class="auth-page">
     <a class="brand" href="#" aria-label="Callrolin">
-      <img class="brand-mark" src="callrolin-mark.webp" alt="" width="36" height="36">
+      <img class="brand-mark" src="callrolin-mark.webp" alt="" width="40" height="40">
       <span class="brand-name"><span class="brand-call">Call</span><span class="brand-rolin">Rolin</span></span>
     </a>
 
     <div class="auth-card">
+      <h1 id="auth-title">Welcome back</h1>
+      <p class="auth-subtitle" id="auth-subtitle">Log in to your Callrolin account</p>
+
       <div class="auth-tabs" role="tablist" aria-label="Sign in or sign up">
         <button class="auth-tab is-active" id="tab-login" role="tab" aria-selected="true" aria-controls="panel-login">Log In</button>
         <button class="auth-tab" id="tab-signup" role="tab" aria-selected="false" aria-controls="panel-signup">Sign Up</button>
       </div>
 
       <!-- LOGIN FORM -->
-      <form id="panel-login" class="auth-form" role="tabpanel" aria-labelledby="tab-login">
+      <form id="panel-login" class="auth-form is-visible" role="tabpanel" aria-labelledby="tab-login">
         <label for="login-email">Email</label>
-        <input id="login-email" type="email" required autocomplete="email">
+        <input id="login-email" type="email" required autocomplete="email" placeholder="you@example.com">
 
         <label for="login-password">Password</label>
-        <input id="login-password" type="password" required autocomplete="current-password">
+        <input id="login-password" type="password" required autocomplete="current-password" placeholder="••••••••">
 
         <button type="submit" class="btn-auth">Log In</button>
         <p class="auth-status" id="login-status" role="status" aria-live="polite"></p>
       </form>
 
       <!-- SIGNUP FORM -->
-      <form id="panel-signup" class="auth-form" role="tabpanel" aria-labelledby="tab-signup" hidden>
+      <form id="panel-signup" class="auth-form" role="tabpanel" aria-labelledby="tab-signup">
         <label for="signup-name">Full Name</label>
-        <input id="signup-name" type="text" required autocomplete="name">
+        <input id="signup-name" type="text" required autocomplete="name" placeholder="Your name">
 
         <label for="signup-email">Email</label>
-        <input id="signup-email" type="email" required autocomplete="email">
+        <input id="signup-email" type="email" required autocomplete="email" placeholder="you@example.com">
 
         <label for="signup-password">Password</label>
-        <input id="signup-password" type="password" required minlength="6" autocomplete="new-password">
+        <input id="signup-password" type="password" required minlength="6" autocomplete="new-password" placeholder="At least 6 characters">
 
         <button type="submit" class="btn-auth">Create Account</button>
         <p class="auth-status" id="signup-status" role="status" aria-live="polite"></p>
