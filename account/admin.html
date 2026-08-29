@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard — Callrolin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="config.js" defer></script>
+  <script src="admin.js" defer></script>
+</head>
+<body>
+  <div class="admin-page">
+    <header class="admin-header">
+      <a class="brand" href="#" aria-label="Callrolin">
+        <img class="brand-mark" src="callrolin-mark.webp" alt="" width="32" height="32">
+        <span class="brand-name"><span class="brand-call">Call</span><span class="brand-rolin">Rolin</span></span>
+        <span class="brand-product">Admin</span>
+      </a>
+      <div class="admin-header-right">
+        <span id="admin-user-email"></span>
+        <button id="logout-btn" class="btn-logout">Log Out</button>
+      </div>
+    </header>
+
+    <main class="admin-main">
+      <h1>Demo Requests</h1>
+      <p id="admin-loading">Loading...</p>
+      <div class="table-wrap" id="table-wrap" hidden>
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Message</th>
+              <th>Source Page</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody id="admin-table-body"></tbody>
+        </table>
+      </div>
+      <p id="admin-empty" hidden>No demo requests yet.</p>
+    </main>
+  </div>
+</body>
+</html>

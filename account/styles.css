@@ -1,0 +1,233 @@
+:root {
+  --orange: #FF6A1A;
+  --orange-light: #FF9F5C;
+  --black: #0A0A0A;
+  --card: #151515;
+  --line: #2A2A2A;
+  --text: #F0EDEA;
+  --text-muted: #B8B0A8;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: var(--black);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+img.brand-mark {
+  border-radius: 50%;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.brand-call { color: var(--orange); }
+.brand-rolin { color: #ffffff; }
+.brand-product {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--orange-light);
+  background: rgba(255,106,26,0.15);
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  margin-left: 0.3rem;
+}
+
+/* ==== Auth page ==== */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 10%, rgba(255,106,26,0.25) 0%, transparent 55%),
+    radial-gradient(ellipse 70% 60% at 85% 90%, rgba(120,20,10,0.3) 0%, transparent 60%),
+    #000000;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.75rem;
+}
+
+.auth-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.auth-tab {
+  flex: 1;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 0.75rem 0.5rem;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.auth-tab.is-active {
+  color: var(--orange);
+  border-bottom-color: var(--orange);
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.auth-form label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.6rem;
+  color: var(--text-muted);
+}
+
+.auth-form input {
+  padding: 0.65rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: #0F0F0F;
+  color: var(--text);
+  font: inherit;
+}
+
+.auth-form input:focus {
+  outline: 2px solid var(--orange);
+  outline-offset: 1px;
+}
+
+.btn-auth {
+  margin-top: 1.25rem;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  border: none;
+  background: var(--orange);
+  color: #ffffff;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.btn-auth:hover { background: var(--orange-light); }
+.btn-auth:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.auth-status {
+  min-height: 1.2em;
+  font-size: 0.85rem;
+  margin: 0.6rem 0 0;
+  color: var(--text-muted);
+}
+
+.auth-status.is-error { color: #FF6B6B; }
+.auth-status.is-success { color: #7CDB8A; }
+
+/* ==== Admin page ==== */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--line);
+  background: var(--card);
+}
+
+.admin-header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.btn-logout {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--text);
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-logout:hover { border-color: var(--orange); color: var(--orange); }
+
+.admin-main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.admin-main h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.admin-table th,
+.admin-table td {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--line);
+  white-space: nowrap;
+}
+
+.admin-table th {
+  background: var(--card);
+  color: var(--orange-light);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.admin-table td {
+  max-width: 260px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+#admin-loading,
+#admin-empty {
+  color: var(--text-muted);
+}
