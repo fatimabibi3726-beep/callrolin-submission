@@ -184,3 +184,22 @@
     });
   }
 })();
+
+// Scroll-reveal animation for major sections
+(() => {
+  const sections = document.querySelectorAll("main > section, .section");
+  if (!sections.length || !window.IntersectionObserver) return;
+  sections.forEach((s) => s.classList.add("reveal-on-scroll"));
+  const io = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-revealed");
+          io.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12 }
+  );
+  sections.forEach((s) => io.observe(s));
+})();

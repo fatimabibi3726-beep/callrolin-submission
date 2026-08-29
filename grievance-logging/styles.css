@@ -1566,3 +1566,63 @@ img.brand-mark {
 .hero .phone-pill-number {
   color: #ffffff !important;
 }
+
+/* ============================================================
+   Shared modern design polish (glass cards + animations)
+   ============================================================ */
+
+@keyframes glowDrift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(20px, -15px) scale(1.05); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero::before,
+  .auth-page::before {
+    animation: glowDrift 14s ease-in-out infinite;
+  }
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+}
+
+.reveal-on-scroll.is-revealed {
+  animation: fadeSlideUp 0.6s ease forwards;
+}
+
+/* Glass card treatment for panels/cards site-wide */
+.card,
+.ticket-card,
+.integration-card,
+.problem-card,
+.qa-card,
+.audit-card,
+.auth-card {
+  background: rgba(22, 22, 22, 0.72) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.08) !important;
+}
+
+.btn,
+.btn-auth,
+.phone-pill {
+  transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn:hover,
+.btn-auth:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px -6px rgba(255,106,26,0.5);
+}
+
+.btn:active,
+.btn-auth:active {
+  transform: scale(0.97);
+}
