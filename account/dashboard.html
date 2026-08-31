@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — Callrolin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="config.js" defer></script>
+  <script src="dashboard.js" defer></script>
+</head>
+<body>
+  <header class="admin-header">
+    <a class="brand" href="/">
+      <img class="brand-mark" src="callrolin-mark.webp" alt="" width="32" height="32">
+      <span class="brand-name"><span class="brand-call">Call</span><span class="brand-rolin">Rolin</span></span>
+      <span class="brand-product">Dashboard</span>
+    </a>
+    <div class="admin-header-right">
+      <span id="user-email"></span>
+      <button id="logout-btn" class="btn-logout">Log Out</button>
+    </div>
+  </header>
+
+  <main class="dash-main">
+    <h1 id="welcome-msg" class="reveal-on-scroll is-revealed">Welcome</h1>
+    <p class="dash-sub reveal-on-scroll is-revealed">What would you like to do today?</p>
+
+    <div class="dash-grid">
+      <a class="dash-card reveal-on-scroll is-revealed" href="/grievance-logging/">
+        <span class="product-tag">Voice-Driven</span>
+        <h3>Grievance Logging</h3>
+        <p>File or review a complaint logged through a phone call.</p>
+        <span class="product-link">Open →</span>
+      </a>
+      <a class="dash-card reveal-on-scroll is-revealed" href="/helpcenter/">
+        <span class="product-tag">RAG-Powered</span>
+        <h3>Voice Helpcenter</h3>
+        <p>Explore document-grounded answers for your organization's FAQs.</p>
+        <span class="product-link">Open →</span>
+      </a>
+      <a class="dash-card reveal-on-scroll is-revealed" href="/account/">
+        <span class="product-tag">Account</span>
+        <h3>Account Settings</h3>
+        <p>Manage your Callrolin account details.</p>
+        <span class="product-link">Open →</span>
+      </a>
+    </div>
+  </main>
+</body>
+</html>

@@ -21,12 +21,30 @@
         <span class="brand-product">Admin</span>
       </a>
       <div class="admin-header-right">
+        <a href="/grievance-logging/" class="admin-nav-link">Grievance Logging</a>
+        <a href="/helpcenter/" class="admin-nav-link">Helpcenter</a>
         <span id="admin-user-email"></span>
         <button id="logout-btn" class="btn-logout">Log Out</button>
       </div>
     </header>
 
     <main class="admin-main">
+      <h1>Overview</h1>
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-value" id="stat-total">–</span>
+          <span class="stat-label">Total Demo Requests</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="stat-grievance">–</span>
+          <span class="stat-label">Grievance Logging</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="stat-helpcenter">–</span>
+          <span class="stat-label">Helpcenter</span>
+        </div>
+      </div>
+
       <h1>Demo Requests</h1>
       <p id="admin-loading">Loading...</p>
       <div class="table-wrap" id="table-wrap" hidden>
@@ -44,6 +62,21 @@
         </table>
       </div>
       <p id="admin-empty" hidden>No demo requests yet.</p>
+
+      <h1>Admin Settings</h1>
+      <div class="settings-card">
+        <p class="dash-sub">Change your admin account password.</p>
+        <form id="settings-form" class="auth-form is-visible">
+          <label for="new-password">New Password</label>
+          <input id="new-password" type="password" required minlength="6" autocomplete="new-password" placeholder="At least 6 characters">
+
+          <label for="confirm-password">Confirm New Password</label>
+          <input id="confirm-password" type="password" required minlength="6" autocomplete="new-password" placeholder="Repeat new password">
+
+          <button type="submit" class="btn-auth">Update Password</button>
+          <p class="auth-status" id="settings-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
     </main>
   </div>
 </body>

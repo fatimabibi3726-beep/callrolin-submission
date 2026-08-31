@@ -344,142 +344,25 @@ img.brand-mark {
   transform: scale(0.97);
 }
 
-.admin-nav-link {
-  color: var(--text-muted);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.85rem;
-}
-.admin-nav-link:hover { color: var(--orange-light); }
-
-/* ==== Stats cards ==== */
-.stat-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1rem;
-  margin-bottom: 2.5rem;
-}
-
-.stat-card {
-  background: rgba(22,22,22,0.75);
-  backdrop-filter: blur(12px);
-  border: 1px solid var(--card-border);
-  border-radius: 16px;
-  padding: 1.25rem 1.4rem;
+/* Top navigation on root auth page */
+.top-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-  transition: transform 0.15s ease, border-color 0.15s ease;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1.25rem 1rem;
+  z-index: 2;
 }
 
-.stat-card:hover {
-  transform: translateY(-3px);
-  border-color: var(--orange);
-}
-
-.stat-value {
-  font-size: 1.9rem;
-  font-weight: 900;
-  color: var(--orange);
-}
-
-.stat-label {
-  font-size: 0.8rem;
+.top-nav a {
   color: var(--text-muted);
-  font-weight: 600;
-}
-
-/* ==== Settings card ==== */
-.settings-card {
-  background: rgba(22,22,22,0.75);
-  backdrop-filter: blur(12px);
-  border: 1px solid var(--card-border);
-  border-radius: 16px;
-  padding: 1.5rem 1.75rem;
-  max-width: 420px;
-  margin-bottom: 2rem;
-}
-
-/* ==== Table row entrance animation ==== */
-@keyframes rowFadeIn {
-  from { opacity: 0; transform: translateY(6px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .row-fade-in {
-    animation: rowFadeIn 0.35s ease both;
-  }
-}
-
-/* ==== User dashboard ==== */
-.dash-main {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2.5rem 1.5rem;
-}
-
-.dash-main h1 {
-  font-size: 1.7rem;
-  font-weight: 900;
-  margin: 0 0 0.35rem;
-}
-
-.dash-sub {
-  color: var(--text-muted);
-  margin: 0 0 2rem;
-}
-
-.dash-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.25rem;
-}
-
-.dash-card {
-  display: block;
-  background: rgba(22,22,22,0.75);
-  backdrop-filter: blur(12px);
-  border: 1px solid var(--card-border);
-  border-radius: 18px;
-  padding: 1.6rem;
   text-decoration: none;
-  color: var(--text);
-  transition: transform 0.15s ease, border-color 0.15s ease;
-}
-
-.dash-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--orange);
-}
-
-.dash-card h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.1rem;
-  font-weight: 800;
-}
-
-.dash-card p {
-  margin: 0 0 1rem;
+  font-weight: 600;
   font-size: 0.88rem;
-  color: var(--text-muted);
+  transition: color 0.15s ease;
 }
 
-.product-tag {
-  display: inline-block;
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--orange-light);
-  background: rgba(255,106,26,0.14);
-  padding: 0.25rem 0.6rem;
-  border-radius: 999px;
-  margin-bottom: 0.85rem;
-}
-
-.product-link {
-  font-weight: 700;
-  font-size: 0.85rem;
-  color: var(--orange);
-}
+.top-nav a:hover { color: var(--orange-light); }

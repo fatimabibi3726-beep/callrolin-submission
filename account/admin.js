@@ -8,7 +8,21 @@
     const { data: { session } } = await supabaseClient.auth.getSession();
 
     if (!session) {
-      window.location.href = "index.html";
+      window.location.href = "/";
+      return;
+    }
+
+    // Verify the ROLE, not just that someone is logged in. A normal
+    // user who types this URL in manually gets bounced to their own
+    // dashboard instead of seeing admin data.
+    const { data: profile } = await supabaseClient
+      .from("profiles")
+      .select("role")
+      .eq("id", session.user.id)
+      .single();
+
+    if (!profile || profile.role !== "admin") {
+      window.location.href = "/account/dashboard.html";
       return;
     }
 
@@ -16,10 +30,10 @@
 
     document.getElementById("logout-btn").addEventListener("click", async () => {
       await supabaseClient.auth.signOut();
-      window.location.href = "index.html";
+      window.location.href = "/";
     });
 
-    // Fetch demo requests
+    // ---- Stats + demo requests table ----
     const loadingEl = document.getElementById("admin-loading");
     const tableWrap = document.getElementById("table-wrap");
     const tableBody = document.getElementById("admin-table-body");
@@ -38,6 +52,8 @@
       return;
     }
 
+    renderStats(data || []);
+
     if (!data || data.length === 0) {
       emptyEl.hidden = false;
       return;
@@ -45,8 +61,10 @@
 
     tableWrap.hidden = false;
 
-    data.forEach((row) => {
+    data.forEach((row, i) => {
       const tr = document.createElement("tr");
+      tr.style.animationDelay = Math.min(i * 40, 400) + "ms";
+      tr.classList.add("row-fade-in");
       const date = row.created_at
         ? new Date(row.created_at).toLocaleString()
         : "";
@@ -59,7 +77,59 @@
       `;
       tableBody.appendChild(tr);
     });
+
+    // ---- Admin Settings: change password ----
+    const settingsForm = document.getElementById("settings-form");
+    const settingsStatus = document.getElementById("settings-status");
+
+    settingsForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const newPassword = document.getElementById("new-password").value;
+      const confirmPassword = document.getElementById("confirm-password").value;
+      const submitBtn = settingsForm.querySelector("button[type='submit']");
+
+      if (newPassword.length < 6) {
+        settingsStatus.textContent = "Password must be at least 6 characters.";
+        settingsStatus.className = "auth-status is-error";
+        return;
+      }
+
+      if (newPassword !== confirmPassword) {
+        settingsStatus.textContent = "Passwords do not match.";
+        settingsStatus.className = "auth-status is-error";
+        return;
+      }
+
+      submitBtn.disabled = true;
+      settingsStatus.textContent = "Updating...";
+      settingsStatus.className = "auth-status";
+
+      const { error: updateError } = await supabaseClient.auth.updateUser({
+        password: newPassword,
+      });
+
+      submitBtn.disabled = false;
+
+      if (updateError) {
+        settingsStatus.textContent = updateError.message;
+        settingsStatus.className = "auth-status is-error";
+      } else {
+        settingsStatus.textContent = "Password updated successfully.";
+        settingsStatus.className = "auth-status is-success";
+        settingsForm.reset();
+      }
+    });
   });
+
+  function renderStats(rows) {
+    const total = rows.length;
+    const grievance = rows.filter((r) => r.source_page === "grievance-logging").length;
+    const helpcenter = rows.filter((r) => r.source_page === "helpcenter").length;
+
+    document.getElementById("stat-total").textContent = total;
+    document.getElementById("stat-grievance").textContent = grievance;
+    document.getElementById("stat-helpcenter").textContent = helpcenter;
+  }
 
   function escapeHtml(str) {
     const div = document.createElement("div");
