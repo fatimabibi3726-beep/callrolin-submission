@@ -117,7 +117,7 @@
     if (profile && profile.role === "admin") {
       window.location.href = "/account/admin.html";
     } else {
-      window.location.href = "/account/dashboard.html";
+      window.location.href = "/grievance-logging/";
     }
   }
 })();
