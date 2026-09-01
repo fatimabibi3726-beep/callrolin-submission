@@ -64,6 +64,21 @@
       <p id="admin-empty" hidden>No demo requests yet.</p>
 
       <h1>Admin Settings</h1>
+
+      <div class="settings-card">
+        <p class="dash-sub">Update your name and email address.</p>
+        <form id="profile-form" class="auth-form is-visible">
+          <label for="profile-name">Full Name</label>
+          <input id="profile-name" type="text" placeholder="Your name">
+
+          <label for="profile-email">Email</label>
+          <input id="profile-email" type="email" placeholder="you@example.com">
+
+          <button type="submit" class="btn-auth">Save Changes</button>
+          <p class="auth-status" id="profile-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
       <div class="settings-card">
         <p class="dash-sub">Change your admin account password.</p>
         <form id="settings-form" class="auth-form is-visible">

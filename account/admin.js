@@ -28,6 +28,61 @@
 
     document.getElementById("admin-user-email").textContent = session.user.email;
 
+    // Pre-fill and handle Name/Email updates
+    const profileNameInput = document.getElementById("profile-name");
+    const profileEmailInput = document.getElementById("profile-email");
+    profileEmailInput.value = session.user.email;
+
+    const { data: myProfile } = await supabaseClient
+      .from("profiles")
+      .select("full_name")
+      .eq("id", session.user.id)
+      .single();
+    if (myProfile) profileNameInput.value = myProfile.full_name || "";
+
+    const profileForm = document.getElementById("profile-form");
+    const profileStatus = document.getElementById("profile-status");
+
+    profileForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const newName = profileNameInput.value.trim();
+      const newEmail = profileEmailInput.value.trim();
+      const submitBtn = profileForm.querySelector("button[type='submit']");
+
+      submitBtn.disabled = true;
+      profileStatus.textContent = "Saving...";
+      profileStatus.className = "auth-status";
+
+      const { error: nameError } = await supabaseClient
+        .from("profiles")
+        .update({ full_name: newName })
+        .eq("id", session.user.id);
+
+      let emailNote = "";
+      if (newEmail && newEmail !== session.user.email) {
+        const { error: emailError } = await supabaseClient.auth.updateUser({
+          email: newEmail,
+        });
+        if (emailError) {
+          profileStatus.textContent = emailError.message;
+          profileStatus.className = "auth-status is-error";
+          submitBtn.disabled = false;
+          return;
+        }
+        emailNote = " Check your new email to confirm the change.";
+      }
+
+      submitBtn.disabled = false;
+
+      if (nameError) {
+        profileStatus.textContent = nameError.message;
+        profileStatus.className = "auth-status is-error";
+      } else {
+        profileStatus.textContent = "Saved." + emailNote;
+        profileStatus.className = "auth-status is-success";
+      }
+    });
+
     document.getElementById("logout-btn").addEventListener("click", async () => {
       await supabaseClient.auth.signOut();
       window.location.href = "/";

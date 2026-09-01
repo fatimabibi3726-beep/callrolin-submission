@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Become Admin — Callrolin</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="config.js" defer></script>
+  <script src="promote.js" defer></script>
+</head>
+<body>
+  <div class="auth-page">
+    <a class="brand" href="/">
+      <img class="brand-mark" src="callrolin-mark.webp" alt="" width="40" height="40">
+      <span class="brand-name"><span class="brand-call">Call</span><span class="brand-rolin">Rolin</span></span>
+    </a>
+
+    <div class="auth-card">
+      <h1>Become Admin</h1>
+      <p class="auth-subtitle">You must be logged in already. Enter the invite code given to you to unlock admin access.</p>
+
+      <form id="promote-form" class="auth-form is-visible">
+        <label for="invite-code">Invite Code</label>
+        <input id="invite-code" type="password" required autocomplete="off" placeholder="Enter invite code">
+
+        <button type="submit" class="btn-auth">Unlock Admin Access</button>
+        <p class="auth-status" id="promote-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
