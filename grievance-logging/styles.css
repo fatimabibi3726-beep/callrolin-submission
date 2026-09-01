@@ -1626,3 +1626,10 @@ img.brand-mark {
 .btn-auth:active {
   transform: scale(0.97);
 }
+
+/* Logout button in nav (shown only when logged in) */
+.btn-logout-nav {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+}

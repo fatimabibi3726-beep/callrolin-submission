@@ -203,3 +203,24 @@
   );
   sections.forEach((s) => io.observe(s));
 })();
+
+// Show a Log Out button in the nav if the visitor is logged in
+(() => {
+  document.addEventListener("DOMContentLoaded", async () => {
+    if (!window.supabase) return;
+    const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+    const { data: { session } } = await supabaseClient.auth.getSession();
+
+    const navItem = document.getElementById("logout-nav-item");
+    const logoutBtn = document.getElementById("logout-btn");
+    if (!navItem || !logoutBtn) return;
+
+    if (session) {
+      navItem.hidden = false;
+      logoutBtn.addEventListener("click", async () => {
+        await supabaseClient.auth.signOut();
+        window.location.href = "/";
+      });
+    }
+  });
+})();
