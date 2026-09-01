@@ -92,6 +92,16 @@
           <p class="auth-status" id="settings-status" role="status" aria-live="polite"></p>
         </form>
       </div>
+      <div class="settings-card">
+        <p class="dash-sub">Promote another registered user to admin by their email. They must already have an account.</p>
+        <form id="manage-admins-form" class="auth-form is-visible">
+          <label for="promote-email">User's Email</label>
+          <input id="promote-email" type="email" required placeholder="colleague@example.com">
+
+          <button type="submit" class="btn-auth">Make Admin</button>
+          <p class="auth-status" id="manage-admins-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
     </main>
   </div>
 </body>

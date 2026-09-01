@@ -83,6 +83,42 @@
       }
     });
 
+    // Manage Admins: promote another existing user by email
+    const manageAdminsForm = document.getElementById("manage-admins-form");
+    const manageAdminsStatus = document.getElementById("manage-admins-status");
+
+    manageAdminsForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const targetEmail = document.getElementById("promote-email").value.trim();
+      const submitBtn = manageAdminsForm.querySelector("button[type='submit']");
+
+      submitBtn.disabled = true;
+      manageAdminsStatus.textContent = "Updating...";
+      manageAdminsStatus.className = "auth-status";
+
+      const { data: result, error: promoteError } = await supabaseClient.rpc(
+        "promote_user_by_email",
+        { target_email: targetEmail }
+      );
+
+      submitBtn.disabled = false;
+
+      if (promoteError || result === "not_authorized") {
+        manageAdminsStatus.textContent = "You are not authorized to do this.";
+        manageAdminsStatus.className = "auth-status is-error";
+      } else if (result === "user_not_found") {
+        manageAdminsStatus.textContent = "No account found with that email. They must sign up first.";
+        manageAdminsStatus.className = "auth-status is-error";
+      } else if (result === "success") {
+        manageAdminsStatus.textContent = targetEmail + " is now an admin.";
+        manageAdminsStatus.className = "auth-status is-success";
+        manageAdminsForm.reset();
+      } else {
+        manageAdminsStatus.textContent = "Something went wrong.";
+        manageAdminsStatus.className = "auth-status is-error";
+      }
+    });
+
     document.getElementById("logout-btn").addEventListener("click", async () => {
       await supabaseClient.auth.signOut();
       window.location.href = "/";
