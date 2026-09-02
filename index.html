@@ -40,7 +40,10 @@
         <input id="login-email" type="email" required autocomplete="email" placeholder="you@example.com">
 
         <label for="login-password">Password</label>
-        <input id="login-password" type="password" required autocomplete="current-password" placeholder="••••••••">
+        <div class="password-field">
+          <input id="login-password" type="password" required autocomplete="current-password" placeholder="••••••••">
+          <button type="button" class="toggle-password" data-target="login-password" aria-label="Show password">👁</button>
+        </div>
 
         <button type="submit" class="btn-auth">Log In</button>
         <p class="auth-status" id="login-status" role="status" aria-live="polite"></p>
@@ -55,7 +58,10 @@
         <input id="signup-email" type="email" required autocomplete="email" placeholder="you@example.com">
 
         <label for="signup-password">Password</label>
-        <input id="signup-password" type="password" required minlength="6" autocomplete="new-password" placeholder="At least 6 characters">
+        <div class="password-field">
+          <input id="signup-password" type="password" required minlength="6" autocomplete="new-password" placeholder="At least 6 characters">
+          <button type="button" class="toggle-password" data-target="signup-password" aria-label="Show password">👁</button>
+        </div>
 
         <button type="submit" class="btn-auth">Create Account</button>
         <p class="auth-status" id="signup-status" role="status" aria-live="polite"></p>
