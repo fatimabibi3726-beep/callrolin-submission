@@ -44,9 +44,21 @@
           <input id="login-password" type="password" required autocomplete="current-password" placeholder="••••••••">
           <button type="button" class="toggle-password" data-target="login-password" aria-label="Show password">👁</button>
         </div>
+        <a href="#" id="forgot-password-link" class="forgot-link">Forgot password?</a>
 
         <button type="submit" class="btn-auth">Log In</button>
         <p class="auth-status" id="login-status" role="status" aria-live="polite"></p>
+      </form>
+
+      <!-- FORGOT PASSWORD FORM -->
+      <form id="panel-forgot" class="auth-form" role="tabpanel">
+        <p class="auth-subtitle" style="margin-bottom: 1rem;">Enter your email and we'll send you a link to reset your password.</p>
+        <label for="forgot-email">Email</label>
+        <input id="forgot-email" type="email" required autocomplete="email" placeholder="you@example.com">
+
+        <button type="submit" class="btn-auth">Send Reset Link</button>
+        <a href="#" id="back-to-login-link" class="forgot-link">Back to Log In</a>
+        <p class="auth-status" id="forgot-status" role="status" aria-live="polite"></p>
       </form>
 
       <!-- SIGNUP FORM -->

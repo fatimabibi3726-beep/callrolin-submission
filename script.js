@@ -8,25 +8,67 @@
     const tabSignup = document.getElementById("tab-signup");
     const panelLogin = document.getElementById("panel-login");
     const panelSignup = document.getElementById("panel-signup");
+    const panelForgot = document.getElementById("panel-forgot");
     const authTitle = document.getElementById("auth-title");
     const authSubtitle = document.getElementById("auth-subtitle");
 
     function showTab(which) {
       const loginActive = which === "login";
+      const forgotActive = which === "forgot";
       tabLogin.classList.toggle("is-active", loginActive);
-      tabSignup.classList.toggle("is-active", !loginActive);
+      tabSignup.classList.toggle("is-active", !loginActive && !forgotActive);
       tabLogin.setAttribute("aria-selected", String(loginActive));
-      tabSignup.setAttribute("aria-selected", String(!loginActive));
+      tabSignup.setAttribute("aria-selected", String(!loginActive && !forgotActive));
       panelLogin.classList.toggle("is-visible", loginActive);
-      panelSignup.classList.toggle("is-visible", !loginActive);
-      authTitle.textContent = loginActive ? "Welcome back" : "Create your account";
-      authSubtitle.textContent = loginActive
-        ? "Log in to your Callrolin account"
-        : "Sign up to get started with Callrolin";
+      panelSignup.classList.toggle("is-visible", !loginActive && !forgotActive);
+      panelForgot.classList.toggle("is-visible", forgotActive);
+      if (forgotActive) {
+        authTitle.textContent = "Reset your password";
+        authSubtitle.textContent = "We'll email you a reset link";
+      } else {
+        authTitle.textContent = loginActive ? "Welcome back" : "Create your account";
+        authSubtitle.textContent = loginActive
+          ? "Log in to your Callrolin account"
+          : "Sign up to get started with Callrolin";
+      }
     }
 
     tabLogin.addEventListener("click", () => showTab("login"));
     tabSignup.addEventListener("click", () => showTab("signup"));
+
+    document.getElementById("forgot-password-link").addEventListener("click", (e) => {
+      e.preventDefault();
+      showTab("forgot");
+    });
+    document.getElementById("back-to-login-link").addEventListener("click", (e) => {
+      e.preventDefault();
+      showTab("login");
+    });
+
+    panelForgot.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const email = document.getElementById("forgot-email").value.trim();
+      const status = document.getElementById("forgot-status");
+      const submitBtn = panelForgot.querySelector("button[type='submit']");
+
+      submitBtn.disabled = true;
+      status.textContent = "Sending...";
+      status.className = "auth-status";
+
+      const { error } = await supabaseClient.auth.resetPasswordForEmail(email, {
+        redirectTo: window.location.origin + "/reset-password.html",
+      });
+
+      submitBtn.disabled = false;
+
+      if (error) {
+        status.textContent = error.message;
+        status.className = "auth-status is-error";
+      } else {
+        status.textContent = "Check your email for a reset link.";
+        status.className = "auth-status is-success";
+      }
+    });
 
     // Redirect an already-logged-in visitor straight to their dashboard
     (async () => {

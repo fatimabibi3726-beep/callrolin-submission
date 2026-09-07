@@ -392,3 +392,14 @@ img.brand-mark {
 }
 
 .toggle-password:hover { opacity: 1; }
+
+/* Forgot password link */
+.forgot-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--orange-light);
+  text-decoration: none;
+  text-align: center;
+}
+.forgot-link:hover { text-decoration: underline; }
