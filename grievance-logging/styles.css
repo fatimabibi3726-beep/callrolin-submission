@@ -4,36 +4,36 @@
    ============================================================ */
 
 :root {
-  --navy-950: #050505;
-  --navy-900: #F5F1ED;
-  --navy-700: #D8CEC5;
-  --ink-strong: #F5F1ED;
-  --ink: #D8CEC5;
-  --ink-muted: #A9A099;
+  --navy-950: #000000;
+  --navy-900: #111111;
+  --navy-700: #262626;
+  --ink-strong: #1A1A1A;
+  --ink: #333333;
+  --ink-muted: #5C5C5C;
 
-  --teal-800: #CC5500;
+  --teal-800: #B34D00;
   --teal-700: #FF6A1A;
-  --teal-100: #3A1C0E;
-  --teal-50: #21130D;
+  --teal-100: #FFE3D1;
+  --teal-50: #FFF3EA;
 
-  --gold-400: #FF9F5C;
-  --gold-200: #5A2B13;
-  --gold-650: #FF8A47;
+  --gold-400: #FF8A47;
+  --gold-200: #FFD3B0;
+  --gold-650: #CC5500;
 
-  --paper: #0A0A0A;
-  --paper-deep: #141414;
-  --card: #161616;
-  --line: #2A2A2A;
+  --paper: #FAF5EC;
+  --paper-deep: #F2EADA;
+  --card: #FFFFFF;
+  --line: #E9E0CD;
 
-  --pain: #FF9B78;
+  --pain: #A8502E;
 
   --radius-lg: 22px;
   --radius-md: 16px;
   --radius-sm: 10px;
 
-  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.24);
-  --shadow-md: 0 18px 44px rgba(0, 0, 0, 0.34);
-  --shadow-teal: 0 10px 26px rgba(255, 106, 26, 0.24);
+  --shadow-sm: 0 2px 8px rgba(11, 39, 64, 0.07);
+  --shadow-md: 0 12px 32px rgba(11, 39, 64, 0.12);
+  --shadow-teal: 0 10px 26px rgba(15, 110, 106, 0.30);
 
   --font-body: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
 
@@ -1632,122 +1632,4 @@ img.brand-mark {
   font: inherit;
   cursor: pointer;
   border: none;
-}
-
-/* Final product-wide finish */
-body {
-  background: var(--paper);
-}
-
-.site-header {
-  background: rgba(10, 10, 10, 0.86);
-  border-bottom-color: transparent;
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-}
-
-.site-header.is-scrolled {
-  border-bottom-color: var(--line);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.24);
-}
-
-.brand-name,
-.site-nav a:not(.btn),
-.nav-toggle {
-  color: var(--ink-strong);
-}
-
-.hero {
-  min-height: min(760px, calc(100vh - var(--header-h)));
-  display: flex;
-  align-items: center;
-  padding-block: clamp(4.5rem, 9vw, 7.5rem);
-  border-bottom: 1px solid var(--line);
-}
-
-.hero-inner {
-  width: 100%;
-}
-
-.hero-copy .lede,
-.hero .hero-note {
-  color: var(--ink-muted) !important;
-}
-
-.call-card,
-.citation-card,
-.problem-card,
-.record-panel,
-.chat,
-.integration-card,
-.qa-card,
-.audit-card,
-.settings-card {
-  background: rgba(22, 22, 22, 0.84);
-  border-color: rgba(255, 255, 255, 0.1);
-  box-shadow: var(--shadow-md);
-}
-
-.problem-card--pain,
-.problem-card--gain {
-  background: rgba(34, 19, 13, 0.92);
-  border-color: rgba(255, 159, 92, 0.24);
-}
-
-.problem-card--gain h3,
-.problem-card--pain h3,
-.record-title,
-.chat-head,
-.section-head h2,
-.section-head h3,
-.step h3 {
-  color: var(--ink-strong);
-}
-
-.section--white {
-  background: #101010;
-  border-block-color: var(--line);
-}
-
-.section--dark {
-  background: #050505;
-}
-
-.demo-form-row input:focus,
-.demo-form-row textarea:focus,
-.nav-toggle:focus-visible,
-.site-nav a:focus-visible,
-.btn:focus-visible,
-.phone-pill:focus-visible {
-  outline: 2px solid var(--orange-light);
-  outline-offset: 3px;
-}
-
-.demo-form-row input:focus,
-.demo-form-row textarea:focus {
-  border-color: var(--orange);
-  box-shadow: 0 0 0 3px rgba(255, 106, 26, 0.16);
-}
-
-@media (max-width: 869px) {
-  .site-nav {
-    background: rgba(16, 16, 16, 0.98);
-    border-bottom-color: var(--line);
-  }
-}
-
-@media (max-width: 600px) {
-  .hero {
-    min-height: auto;
-    padding-block: 3.75rem 4.5rem;
-  }
-
-  .hero h1 {
-    font-size: clamp(2.25rem, 12vw, 3.5rem);
-  }
-
-  .phone-pill {
-    width: 100%;
-    justify-content: center;
-  }
 }
