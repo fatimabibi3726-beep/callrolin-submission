@@ -483,3 +483,174 @@ img.brand-mark {
   font-size: 0.85rem;
   color: var(--orange);
 }
+
+/* Admin dashboard finish */
+body {
+  background:
+    radial-gradient(ellipse 70% 50% at 100% 0%, rgba(255, 106, 26, 0.12), transparent 60%),
+    #0A0A0A;
+}
+
+.admin-page {
+  min-height: 100vh;
+}
+
+.admin-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  min-height: 76px;
+  padding: 1rem clamp(1rem, 4vw, 3rem);
+  background: rgba(16, 16, 16, 0.88);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.admin-header-right {
+  gap: clamp(0.65rem, 2vw, 1.4rem);
+}
+
+.admin-nav-link,
+.btn-logout,
+.admin-header .brand:focus-visible,
+.admin-nav-link:focus-visible,
+.btn-logout:focus-visible {
+  outline: 2px solid var(--orange-light);
+  outline-offset: 3px;
+}
+
+.admin-nav-link {
+  transition: color 0.15s ease;
+}
+
+.admin-user-email {
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-logout {
+  min-height: 40px;
+  padding: 0.55rem 1rem;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+
+.btn-logout:hover {
+  background: rgba(255, 106, 26, 0.1);
+  transform: translateY(-1px);
+}
+
+.admin-main {
+  width: min(1120px, 92%);
+  padding: clamp(2.25rem, 5vw, 4rem) 0 5rem;
+}
+
+.admin-main > h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.35rem, 2vw, 1.7rem);
+  letter-spacing: -0.02em;
+}
+
+.admin-main > h1:not(:first-child) {
+  margin-top: 3.25rem;
+}
+
+.stat-grid {
+  gap: 1rem;
+  margin-bottom: 0;
+}
+
+.stat-card,
+.settings-card {
+  background: rgba(22, 22, 22, 0.82);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+}
+
+.stat-card {
+  min-height: 132px;
+  justify-content: center;
+  transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+}
+
+.stat-card:hover {
+  background: rgba(29, 29, 29, 0.92);
+}
+
+.stat-value {
+  font-size: clamp(2rem, 4vw, 2.6rem);
+}
+
+.table-wrap {
+  background: rgba(22, 22, 22, 0.76);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+}
+
+.admin-table th {
+  background: #1C1C1C;
+}
+
+.admin-table th,
+.admin-table td {
+  padding-block: 1rem;
+}
+
+.admin-table tbody tr {
+  transition: background 0.15s ease;
+}
+
+.settings-card {
+  max-width: none;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+}
+
+.settings-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.settings-card .auth-form {
+  max-width: 440px;
+}
+
+.settings-card .auth-form input:focus {
+  outline: none;
+  border-color: var(--orange);
+  box-shadow: 0 0 0 3px rgba(255, 106, 26, 0.16);
+}
+
+.settings-card .btn-auth:focus-visible,
+.settings-card input:focus-visible {
+  outline: 2px solid var(--orange-light);
+  outline-offset: 3px;
+}
+
+@media (min-width: 760px) {
+  .settings-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .admin-header {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .admin-header-right {
+    width: 100%;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  .admin-nav-link {
+    display: none;
+  }
+
+  .admin-user-email {
+    max-width: min(52vw, 220px);
+  }
+}

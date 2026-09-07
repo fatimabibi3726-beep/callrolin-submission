@@ -59,7 +59,7 @@ img.brand-mark {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 1.75rem;
   padding: 3rem 1.25rem;
   position: relative;
   overflow: hidden;
@@ -74,6 +74,13 @@ img.brand-mark {
   position: relative;
   z-index: 1;
   font-size: 1.4rem;
+}
+
+.auth-layout {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 420px;
 }
 
 .auth-card {
@@ -162,6 +169,7 @@ img.brand-mark {
 .auth-form input:focus {
   outline: none;
   border-color: var(--orange);
+  box-shadow: 0 0 0 3px rgba(255, 106, 26, 0.16);
 }
 
 .btn-auth {
@@ -181,6 +189,15 @@ img.brand-mark {
 .btn-auth:hover { background: var(--orange-light); }
 .btn-auth:active { transform: scale(0.98); }
 .btn-auth:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.auth-tab:focus-visible,
+.toggle-password:focus-visible,
+.btn-auth:focus-visible,
+.forgot-link:focus-visible,
+.brand:focus-visible {
+  outline: 2px solid var(--orange-light);
+  outline-offset: 3px;
+}
 
 .auth-status {
   min-height: 1.2em;
@@ -344,33 +361,6 @@ img.brand-mark {
   transform: scale(0.97);
 }
 
-/* Top navigation on root auth page */
-.top-nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  padding: 1.25rem 1rem;
-  z-index: 2;
-}
-
-.top-nav a {
-  color: var(--text-muted);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.88rem;
-  transition: color 0.15s ease;
-}
-
-.top-nav a:hover { color: var(--orange-light); }
-.top-nav a:focus {
-  outline: none;
-  color: var(--orange-light);
-}
-
 /* Password show/hide toggle */
 .password-field {
   position: relative;
@@ -389,13 +379,26 @@ img.brand-mark {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 1rem;
+  color: var(--orange-light);
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 700;
   opacity: 0.6;
   padding: 0.2rem;
   line-height: 1;
 }
 
 .toggle-password:hover { opacity: 1; }
+
+@media (max-width: 420px) {
+  .auth-card {
+    padding-inline: 1.25rem;
+  }
+
+  .top-nav a {
+    font-size: 0.78rem;
+  }
+}
 
 /* Forgot password link */
 .forgot-link {

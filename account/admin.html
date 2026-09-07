@@ -66,42 +66,44 @@
 
       <h1>Admin Settings</h1>
 
-      <div class="settings-card">
-        <p class="dash-sub">Update your name and email address.</p>
-        <form id="profile-form" class="auth-form is-visible">
-          <label for="profile-name">Full Name</label>
-          <input id="profile-name" type="text" placeholder="Your name">
+      <div class="settings-grid">
+        <div class="settings-card">
+          <p class="dash-sub">Update your name and email address.</p>
+          <form id="profile-form" class="auth-form is-visible">
+            <label for="profile-name">Full Name</label>
+            <input id="profile-name" type="text" placeholder="Your name">
 
-          <label for="profile-email">Email</label>
-          <input id="profile-email" type="email" placeholder="you@example.com">
+            <label for="profile-email">Email</label>
+            <input id="profile-email" type="email" placeholder="you@example.com">
 
-          <button type="submit" class="btn-auth">Save Changes</button>
-          <p class="auth-status" id="profile-status" role="status" aria-live="polite"></p>
-        </form>
-      </div>
+            <button type="submit" class="btn-auth">Save Changes</button>
+            <p class="auth-status" id="profile-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
 
-      <div class="settings-card">
-        <p class="dash-sub">Change your admin account password.</p>
-        <form id="settings-form" class="auth-form is-visible">
-          <label for="new-password">New Password</label>
-          <input id="new-password" type="password" required minlength="6" autocomplete="new-password" placeholder="At least 6 characters">
+        <div class="settings-card">
+          <p class="dash-sub">Change your admin account password.</p>
+          <form id="settings-form" class="auth-form is-visible">
+            <label for="new-password">New Password</label>
+            <input id="new-password" type="password" required minlength="6" autocomplete="new-password" placeholder="At least 6 characters">
 
-          <label for="confirm-password">Confirm New Password</label>
-          <input id="confirm-password" type="password" required minlength="6" autocomplete="new-password" placeholder="Repeat new password">
+            <label for="confirm-password">Confirm New Password</label>
+            <input id="confirm-password" type="password" required minlength="6" autocomplete="new-password" placeholder="Repeat new password">
 
-          <button type="submit" class="btn-auth">Update Password</button>
-          <p class="auth-status" id="settings-status" role="status" aria-live="polite"></p>
-        </form>
-      </div>
-      <div class="settings-card">
-        <p class="dash-sub">Promote another registered user to admin by their email. They must already have an account.</p>
-        <form id="manage-admins-form" class="auth-form is-visible">
-          <label for="promote-email">User's Email</label>
-          <input id="promote-email" type="email" required placeholder="colleague@example.com">
+            <button type="submit" class="btn-auth">Update Password</button>
+            <p class="auth-status" id="settings-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+        <div class="settings-card">
+          <p class="dash-sub">Promote another registered user to admin by their email. They must already have an account.</p>
+          <form id="manage-admins-form" class="auth-form is-visible">
+            <label for="promote-email">User's Email</label>
+            <input id="promote-email" type="email" required placeholder="colleague@example.com">
 
-          <button type="submit" class="btn-auth">Make Admin</button>
-          <p class="auth-status" id="manage-admins-status" role="status" aria-live="polite"></p>
-        </form>
+            <button type="submit" class="btn-auth">Make Admin</button>
+            <p class="auth-status" id="manage-admins-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
       </div>
     </main>
   </div>

@@ -14,24 +14,22 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <nav class="top-nav">
-    <a href="/grievance-logging/">Grievance Logging</a>
-    <a href="/helpcenter/">Helpcenter</a>
-  </nav>
+  <a class="skip-link" href="#auth-main">Skip to sign in</a>
 
   <div class="auth-page">
-    <a class="brand" href="/">
+    <a class="brand" href="/" aria-label="Callrolin home">
       <img class="brand-mark" src="callrolin-mark.webp" alt="" width="40" height="40">
       <span class="brand-name"><span class="brand-call">Call</span><span class="brand-rolin">Rolin</span></span>
     </a>
 
-    <div class="auth-card">
+    <main class="auth-layout" id="auth-main">
+      <section class="auth-card" aria-labelledby="auth-title">
       <h1 id="auth-title">Welcome back</h1>
       <p class="auth-subtitle" id="auth-subtitle">Log in to your Callrolin account</p>
 
       <div class="auth-tabs" role="tablist" aria-label="Sign in or sign up">
-        <button class="auth-tab is-active" id="tab-login" role="tab" aria-selected="true" aria-controls="panel-login">Log In</button>
-        <button class="auth-tab" id="tab-signup" role="tab" aria-selected="false" aria-controls="panel-signup">Sign Up</button>
+        <button type="button" class="auth-tab is-active" id="tab-login" role="tab" aria-selected="true" aria-controls="panel-login">Log In</button>
+        <button type="button" class="auth-tab" id="tab-signup" role="tab" aria-selected="false" aria-controls="panel-signup">Sign Up</button>
       </div>
 
       <!-- LOGIN FORM -->
@@ -42,7 +40,7 @@
         <label for="login-password">Password</label>
         <div class="password-field">
           <input id="login-password" type="password" required autocomplete="current-password" placeholder="••••••••">
-          <button type="button" class="toggle-password" data-target="login-password" aria-label="Show password">👁</button>
+          <button type="button" class="toggle-password" data-target="login-password" aria-label="Show password"><span aria-hidden="true">View</span></button>
         </div>
         <a href="#" id="forgot-password-link" class="forgot-link">Forgot password?</a>
 
@@ -72,13 +70,14 @@
         <label for="signup-password">Password</label>
         <div class="password-field">
           <input id="signup-password" type="password" required minlength="6" autocomplete="new-password" placeholder="At least 6 characters">
-          <button type="button" class="toggle-password" data-target="signup-password" aria-label="Show password">👁</button>
+          <button type="button" class="toggle-password" data-target="signup-password" aria-label="Show password"><span aria-hidden="true">View</span></button>
         </div>
 
         <button type="submit" class="btn-auth">Create Account</button>
         <p class="auth-status" id="signup-status" role="status" aria-live="polite"></p>
       </form>
-    </div>
+      </section>
+    </main>
   </div>
 </body>
 </html>
