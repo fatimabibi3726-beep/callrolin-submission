@@ -366,6 +366,10 @@ img.brand-mark {
 }
 
 .top-nav a:hover { color: var(--orange-light); }
+.top-nav a:focus {
+  outline: none;
+  color: var(--orange-light);
+}
 
 /* Password show/hide toggle */
 .password-field {
