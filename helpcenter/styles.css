@@ -283,7 +283,7 @@ section[id] {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(250, 245, 236, 0.88);
+  background: rgba(10, 10, 10, 0.9);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid transparent;
@@ -1611,4 +1611,26 @@ img.brand-mark {
   font: inherit;
   cursor: pointer;
   border: none;
+}
+
+/* Fix header contrast: header is now dark, so nav text/icons need to be light */
+.site-header .site-nav a:not(.btn) {
+  color: #F0EBE3;
+}
+.site-header .site-nav a:not(.btn):hover {
+  color: var(--gold-400);
+}
+.site-header .nav-toggle svg,
+.site-header .nav-toggle {
+  color: #F0EBE3;
+}
+
+/* On mobile the nav dropdown itself is white, so keep that text dark */
+@media (max-width: 869px) {
+  .site-header .site-nav a:not(.btn) {
+    color: var(--navy-700);
+  }
+  .site-header .site-nav a:not(.btn):hover {
+    color: var(--teal-700);
+  }
 }
