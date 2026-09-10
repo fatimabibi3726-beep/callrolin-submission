@@ -1,0 +1,9 @@
+{
+  "name": "callrolin-submission",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@google/genai": "^0.15.0",
+    "@supabase/supabase-js": "^2.45.4"
+  }
+}

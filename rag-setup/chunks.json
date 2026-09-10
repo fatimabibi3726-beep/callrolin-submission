@@ -1,0 +1,298 @@
+[
+  {
+    "section": "‏اس ‎document‎ کا مقصد‏",
+    "content": "‏یہ جامع ‎profile CallRolin (Private) Limited‎ کی ‎company positioning‎، ‎product portfolio‎، ‎technical capabilities‎، ‎deployment models‎، ‎sector-specific use cases‎، ‎commercial plans‎، ‎privacy framework‎ اور ‎responsible Voice AI practices‎ کو ایک ہی جگہ پیش کرتی ہے۔ اسے ‎banks‎، ‎government departments‎، ‎healthcare institutions‎، ‎telecom operators‎، ‎enterprises‎، ‎strategic partners‎ اور ‎MENA stakeholders‎ کے ساتھ ابتدائی ‎business discussion‎ کے لیے استعمال کیا جا سکتا ہے۔‏\nاہم قانونی نوٹ  ‏یہ ‎business information document‎ ہے، کوئی ‎binding contract‎، ‎regulatory approval‎، ‎legal opinion‎ یا ‎guaranteed SLA‎ نہیں۔ ‎Privacy Policy‎ اور ‎Terms‎ کا ‎Urdu‎ خلاصہ سہولت کے لیے شامل ہے؛ کسی اختلاف کی صورت میں ‎website‎ یا ‎signed agreement‎ پر موجود ‎English legal text‎ مؤثر ہوگا۔‏"
+  },
+  {
+    "section": "‏اس ‎document‎ کا مقصد‏ > Document scope",
+    "content": "‏‎Company‎، ‎mission‎، ‎leadership team‎، ‎strategic backing‎ اور ‎traction‎‏\n‏‎Urdu STT‎، ‎multilingual TTS‎، ‎real-time streaming‎ اور ‎enterprise Voice Agent architecture‎‏\n‏‎Banking‎، ‎government‎، ‎health‎، ‎telecom‎، ‎fintech‎، ‎e-commerce‎، ‎logistics‎، ‎insurance‎، ‎education‎ اور دیگر ‎sectors‎ کے ‎use cases‎‏\n‏‎SaaS‎، ‎dedicated cloud‎ اور ‎on-premise deployment models‎‏\n‏‎Privacy‎، ‎data residency‎، ‎retention‎، ‎security controls‎ اور ‎responsible voice-use principles‎‏\n‏‎Pilot methodology‎، ‎measurable KPIs‎، ‎rollout roadmap‎ اور ‎MENA expansion direction‎‏"
+  },
+  {
+    "section": "فہرستِ مضامین",
+    "content": "انتظامی خلاصہ\nکمپنی کا تعارف\nمارکیٹ کا مسئلہ اور کاروباری موقع\nProduct Portfolio\n‏‎Technical Architecture‎ اور بنیادی ‎capabilities‎‏\n‏‎Deployment‎، ‎Integration‎ اور ‎Operations‎‏\n‏مختلف ‎sectors‎ کے ‎Voice AI use cases‎‏\nBanking Voice AI Pilot framework\n‏‎Security‎، ‎Privacy‎ اور ‎Data Governance‎‏\n‏‎Commercial model‎ اور ‎pricing‎‏\n‏‎Leadership‎، ‎ecosystem‎ اور ‎traction‎‏\n‏‎Pakistan‎ سے ‎MENA‎ تک ‎growth roadmap‎‏\nResponsible AI framework\n‏‎Engagement model‎ اور اگلے اقدامات‏\nقانونی ضمیمے"
+  },
+  {
+    "section": "۱۔ انتظامی خلاصہ",
+    "content": "‏ایک سطر میں ‎CallRolin‎  ‏‏پاکستان اور ‎MENA‎ کے لیے ‎region-first Voice AI platform: Urdu Speech-to-Text‎، ‎Urdu/Arabic/English Text-to-Speech‎، ‎real-time APIs‎، ‎enterprise Voice Agents‎ اور ‎on-premise deployment‎۔‏\n‏‎CallRolin‎ کا بنیادی مقصد ایسی ‎speech technology‎ تیار کرنا ہے جو ‎Urdu‎ اور ‎Arabic‎ کو ‎secondary language‎ یا ‎foreign-model add-on‎ کے طور پر نہ لے، بلکہ انہی زبانوں، لہجوں، ناموں، تلفظ، ‎code-switching‎ اور مقامی ‎business context‎ کے مطابق بنائی گئی ہو۔ ‎Platform‎ کا موجودہ ‎public positioning‎ ایک ‎API‎ کے ذریعے ‎Urdu STT‎ اور ‎Urdu‎، ‎Arabic‎ اور ‎English TTS‎ فراہم کرنا ہے، جبکہ ‎enterprise solution layer‎ انہی ‎capabilities‎ کو ‎intelligent Voice Agents‎، ‎workflow integration‎ اور ‎human escalation‎ کے ساتھ جوڑتی ہے۔‏\n‏‎CallRolin‎ کی ‎strategic strength core speech layer‎ پر ‎in-house ownership‎ ہے۔ ‎Company-supplied material‎ کے مطابق ‎Urdu STT‎ کو “‎Samaat‎” اور ‎Urdu TTS‎ کو “‎Humnava‎” کے نام سے ‎position‎ کیا گیا ہے۔ ‎Domain-tuned LLM/orchestration layer caller intent‎ کو سمجھتی، ‎approved knowledge‎ اور ‎live enterprise systems‎ سے جواب لیتی، ‎action‎ مکمل کرتی اور ضرورت پڑنے پر مکمل ‎transcript‎ کے ساتھ ‎human agent‎ کو ‎call‎ منتقل کرتی ہے۔‏"
+  },
+  {
+    "section": "۱۔ انتظامی خلاصہ > اہم قدر اور کاروباری فائدہ",
+    "content": "‏مقامی زبان اور ‎accent fit‎ — پاکستانی ‎Urdu‎، ‎mixed Urdu-English speech‎، ‎domain terms‎، ‎names‎، ‎numbers‎، ‎dates‎ اور ‎currency handling‎۔‏\n‏‎Real-time conversation‎ — ‎low-latency streaming‎ کے ذریعے ‎live calls‎ اور ‎interactive applications‎ کے لیے موزوں۔‏\n‏‎Enterprise control‎ — ‎on-premise option‎ کے ذریعے ‎audio‎، ‎transcripts‎ اور ‎customer data‎ کو ‎client‎ کے اپنے ‎environment‎ میں رکھنا۔‏\n‏‎API-led automation‎ — صرف ‎answer‎ نہیں؛ ‎approved APIs‎ کے ذریعے ‎status lookup‎، ‎booking‎، ‎complaint‎، ‎payment workflow‎ اور ‎verification actions‎۔‏\n‏‎Human-in-the-loop‎ — ‎high-risk‎، ‎sensitive‎، ‎clinical‎، ‎fraud‎، ‎complaint escalation‎ یا ‎frustrated caller‎ کو انسان تک منتقل کرنا۔‏\n‏‎Regional scale‎ — ‎Pakistan‎ سے آغاز، مگر ‎long-term product direction GCC‎ اور ‎wider MENA‎ کے ‎Arabic/English/Urdu use cases‎ تک۔‏"
+  },
+  {
+    "section": "۲۔ کمپنی کا تعارف > ‏مشن (‎Mission)‎‏",
+    "content": "‏‎World-class Voice AI‎ کو ہماری زبانوں میں اس طرح قابلِ استعمال بنانا کہ ‎Urdu‎ اور ‎Arabic‎ بولنے والے صارفین اپنی قدرتی زبان، لہجے اور روزمرہ اندازِ گفتگو میں ‎digital services‎ تک رسائی حاصل کر سکیں۔‏"
+  },
+  {
+    "section": "۲۔ کمپنی کا تعارف > ‏وژن (‎Vision)‎‏",
+    "content": "‏ایسا ‎region‎ جہاں ‎calls‎، ‎public services‎، ‎financial interactions‎، ‎health access‎، ‎enterprise support‎ اور ‎digital content‎ ایسی ‎Voice AI‎ پر چلیں جس کی ‎language quality‎، ‎deployment‎ اور ‎data controls‎ پر مقامی اداروں کا حقیقی اختیار ہو۔‏"
+  },
+  {
+    "section": "۲۔ کمپنی کا تعارف > ‏‎CallRolin‎ کیوں؟‏",
+    "content": "‏‎Foreign speech models‎ اکثر ‎Urdu names‎، ‎code-switching‎، ‎local pronunciation‎ اور ‎noisy phone audio‎ پر کمزور ‎perform‎ کرتے ہیں۔‏\n‏‎Apps‎، ‎text bots‎ اور ‎traditional IVRs non-tech‎، ‎older‎ یا ‎Urdu-first users‎ کے لیے ‎friction‎ پیدا کرتے ہیں؛ ‎voice‎ زیادہ ‎natural channel‎ ہے۔‏\n‏‎Regulated sectors‎ کو ‎data residency‎، ‎auditability‎، ‎access control‎ اور ‎approved infrastructure‎ کی ضرورت ہوتی ہے۔‏\n‏‎High-volume contact centres‎ میں ‎repetitive calls human teams‎ کی ‎capacity‎ اور ‎service quality‎ دونوں کو متاثر کرتی ہیں۔‏\n‏‎CallRolin‎ کا ‎model technology provider‎ کے ساتھ ‎implementation partner‎ بننا ہے: ‎speech layer‎، ‎integration‎، ‎workflow design‎، ‎pilot‎ اور ‎scale-up‎۔‏"
+  },
+  {
+    "section": "۳۔ مارکیٹ کا مسئلہ اور کاروباری موقع",
+    "content": "‏پاکستان اور ‎MENA‎ میں ‎customer-facing organizations‎ روزانہ بڑی تعداد میں ایسی ‎calls‎ سنبھالتی ہیں جو ‎repetitive‎، ‎predictable‎ اور ‎process-driven‎ ہوتی ہیں: ‎balance‎، ‎order status‎، ‎appointment‎، ‎application follow-up‎، ‎complaint number‎، ‎payment due date‎، ‎branch timing‎ یا ‎service eligibility‎۔ یہ ‎calls‎ ضروری ہیں، مگر ہر ‎call‎ کے لیے ‎skilled human agent‎ استعمال کرنا مہنگا اور غیر مؤثر ہے۔‏\n‏‎Source basis: CallRolin Generic Deck‎، ‎Sector Use Cases‎، ‎Banking Pilot Proposal‎، اور ‎www.callrolin.com (accessed 2 September 2026).‎‏"
+  },
+  {
+    "section": "‏۴۔ ‎Product Portfolio‎‏ > 4.1 Samaat — Urdu Speech-to-Text (STT)",
+    "content": "‏‎Samaat‎ ایک ‎Urdu-focused speech recognition layer‎ کے طور پر ‎position‎ کیا گیا ہے، جس کا مقصد ‎studio recordings‎ کے بجائے حقیقی پاکستانی ‎calls‎، ‎mixed Urdu-English speech‎، ‎accents‎، ‎domain terms‎ اور ‎telephony conditions‎ کو سمجھنا ہے۔ یہ ‎batch transcription‎ اور ‎chunked/streaming transcription‎ دونوں ‎scenarios‎ میں استعمال ہو سکتا ہے۔‏\n‏‎Urdu audio‎ کو ‎clean‎، ‎searchable‎ اور ‎structured text‎ میں تبدیل کرنا۔‏\n‏‎Live calls‎ کے لیے ‎streaming/chunked transcription‎۔‏\n‏‎Business‎ اور ‎Enterprise plans‎ میں ‎word-level timestamps‎۔‏\n‏‎Call transcription‎، ‎quality monitoring‎، ‎analytics‎، ‎audit‎ اور ‎searchable archives‎۔‏\n‏‎Contact centre‎، ‎media monitoring‎، ‎government helplines‎ اور ‎enterprise workflows‎ میں استعمال۔‏"
+  },
+  {
+    "section": "‏۴۔ ‎Product Portfolio‎‏ > 4.2 Humnava — Text-to-Speech (TTS)",
+    "content": "‏‎Humnava multilingual speech synthesis layer‎ ہے جو ‎Urdu‎، ‎Arabic‎ اور ‎English text‎ کو ‎natural audio‎ میں تبدیل کرتی ہے۔ ‎Product page‎ کے مطابق ‎real-time‎، ‎streaming‎ اور ‎batch synthesis modes‎، ‎pronunciation dictionary‎، ‎text normalization‎، ‎speed/style controls‎ اور ‎telephony-ready formats‎ دستیاب ہیں۔‏"
+  },
+  {
+    "section": "‏۴۔ ‎Product Portfolio‎‏ > 4.3 Enterprise Voice Agents",
+    "content": "‏‎Enterprise Voice Agent STT‎، ‎conversational intelligence/LLM‎، ‎TTS‎، ‎workflow orchestration‎ اور ‎human escalation‎ کو ایک ‎controlled system‎ میں جوڑتا ہے۔ ‎Agent caller‎ کی بات سنتا ہے، ‎intent‎ سمجھتا ہے، ‎approved knowledge‎ یا ‎enterprise API‎ سے ‎information‎ لیتا ہے، ‎action‎ مکمل کرتا ہے، ‎natural voice‎ میں جواب دیتا ہے، ‎context‎ برقرار رکھتا ہے اور ‎policy trigger‎ پر ‎human team‎ کو ‎call handover‎ کرتا ہے۔‏\n‏‎Inbound customer support‎، ‎helpline‎ اور ‎reception workflows‎۔‏\n‏‎Outbound reminders‎، ‎confirmations‎، ‎surveys‎، ‎collections‎ اور ‎lead follow-up‎۔‏\n‏‎Identity/KYC checks‎، ‎status lookup‎، ‎ticket creation‎، ‎booking‎، ‎billing‎ اور ‎payment guidance‎۔‏\n‏‎Human escalation with transcript‎، ‎reason code‎ اور ‎conversation context‎۔‏\n‏‎On-premise‎ یا ‎dedicated deployment for regulated clients‎۔‏"
+  },
+  {
+    "section": "‏۴۔ ‎Product Portfolio‎‏ > 4.4 Developer Platform",
+    "content": "‏‎Public developer pages‎ کے مطابق ‎CallRolin REST API‎ اور ‎WebSocket/HTTP streaming‎، ‎Python‎ اور ‎Node SDK direction‎، ‎Bearer API-key authentication‎، ‎request logs‎ اور ‎usage analytics‎ فراہم کرتا ہے۔ ‎Core endpoints speech generation‎، ‎streaming speech‎، ‎transcription‎ اور ‎voices listing‎ کے لیے ‎position‎ کیے گئے ہیں۔‏\nDeveloper experience  ‏مقصد یہ ہے کہ ‎teams‎ چند ‎integration steps‎ میں ‎TTS‎ یا ‎STT‎ شروع کر سکیں، پھر ‎production‎ ضرورت کے مطابق ‎streaming‎، ‎concurrency‎، ‎custom voice‎ اور ‎on-premise architecture‎ تک ‎scale‎ کریں۔‏"
+  },
+  {
+    "section": "‏۵۔ ‎Technical Architecture‎ اور بنیادی ‎capabilities‎‏ > ‏۵۔۱ ‎End-to-end‎ گفتگو کا ‎flow‎‏",
+    "content": "‏‎Caller/Channel‎ — ‎Phone‎، ‎WhatsApp/Zoom workflow‎، ‎app press-to-talk‎ یا ‎web interface‎ سے ‎audio‎ آتا ہے۔‏\n‏‎STT‎ — ‎Samaat audio‎ کو ‎text‎، ‎timestamps‎ اور ‎confidence signals‎ میں تبدیل کرتا ہے۔‏\n‏‎Intent & Policy‎ — ‎Orchestration layer intent‎، ‎risk keywords‎، ‎caller state‎ اور ‎allowed action identify‎ کرتی ہے۔‏\n‏‎Knowledge/API‎ — ‎Approved knowledge base‎ یا ‎client APIs‎ سے ‎status‎، ‎booking‎، ‎account‎، ‎ticket‎ یا ‎workflow data‎ حاصل ہوتا ہے۔‏\n‏‎Response‎ — ‎LLM/policy layer grounded response‎ تیار کرتی ہے؛ ‎unsupported guessing‎ کو روکنے کے لیے ‎controlled retrieval‎ استعمال ہوتا ہے۔‏\n‏‎TTS‎ — ‎Humnava‎ جواب کو ‎Urdu‎، ‎Arabic‎ یا ‎English‎ میں ‎telephony-ready audio‎ بناتا ہے۔‏\n‏‎Resolution/Escalation‎ — ‎action complete‎ ہوتا ہے یا ‎human agent‎ کو ‎transcript‎ اور ‎context‎ کے ساتھ ‎handover‎ کیا جاتا ہے۔‏\nArchitecture principle  ‏‎Automation‎ صرف ‎approved information‎ اور ‎APIs‎ تک محدود ہونی چاہیے۔ ‎Sensitive action‎ کے لیے ‎authentication‎، ‎permission‎، ‎audit log‎ اور ‎explicit workflow rule‎ لازم ہیں۔‏"
+  },
+  {
+    "section": "‏۵۔ ‎Technical Architecture‎ اور بنیادی ‎capabilities‎‏ > ‏۵۔۳ ‎Performance positioning‎‏",
+    "content": "‏‎Website product page‎ <‎150 ms first-audio latency (TTS)‎، <‎200 ms transcription latency (STT)‎، ‎0.3x real-time factor‎ اور ‎1000+ concurrency‎ کی ‎public performance positioning‎ دکھاتی ہے۔ یہ ‎metrics environment‎، ‎model‎، ‎payload‎، ‎network‎، ‎audio format‎ اور ‎deployment sizing‎ سے متاثر ہو سکتی ہیں؛ ‎enterprise procurement‎ میں ‎benchmark methodology‎، ‎test hardware‎، ‎concurrency profile‎ اور ‎acceptance thresholds‎ کو ‎pilot‎ کے ذریعے ‎validate‎ کرنا چاہیے۔‏\nPublic product metrics: https://callrolin.com/product — accessed 2 September 2026. Metrics should be contractually validated for each deployment."
+  },
+  {
+    "section": "‏۶۔ ‎Deployment‎، ‎Integration‎ اور ‎Operations‎‏ > ‏۶۔۲ ‎Integrations‎ کی موجودہ ‎status‎‏",
+    "content": "No hidden dependency claim  ‏‎CallRolin core STT/TTS models‎ کو ‎in-house ownership‎ کے طور پر ‎position‎ کرتا ہے؛ اس کا مطلب یہ نہیں کہ ‎infrastructure‎ میں کوئی ‎third party‎ نہیں۔ ‎Standard cloud hosting‎ کے لیے ‎Google Cloud‎ اور ‎billing‎ کے لیے ‎Paddle listed subprocessors‎ ہیں۔ ‎On-premise model core processing‎ کو ‎client environment‎ میں رکھنے کے لیے بنایا گیا ہے۔‏"
+  },
+  {
+    "section": "‏۷۔ مختلف ‎sectors‎ کے ‎Voice AI use cases‎‏",
+    "content": "‏ہر ‎sector‎ میں ‎technology‎ ایک ہی اصول پر کام کرتی ہے: ‎repeated workflow identify‎ کریں، ‎approved system access define‎ کریں، ‎identity/risk controls‎ طے کریں، ‎routine path automate‎ کریں اور ‎human escalation‎ محفوظ رکھیں۔ درج ذیل ‎use cases product possibilities‎ ہیں؛ ہر ‎deployment client APIs‎، ‎legal basis‎، ‎security review‎ اور ‎pilot validation‎ کے تابع ہوگا۔‏"
+  },
+  {
+    "section": "‏۷۔ مختلف ‎sectors‎ کے ‎Voice AI use cases‎‏ > ۷۔۱ بینکاری اور مالیاتی ادارے",
+    "content": "مسئلہ:‏ ‎Contact centres‎ میں ‎account FAQs‎، ‎card information‎، ‎branch guidance‎، ‎complaint intake‎، ‎application follow-up‎ اور ‎reminders‎ کی بڑی ‎repetitive volume‎ آتی ہے۔‏\nVoice solution:‏ ‎Private/self-hosted Voice Agent approved banking APIs‎ کے ذریعے ‎low-risk information‎ اور ‎workflows handle‎ کرے، جبکہ ‎sensitive actions bank-defined authentication‎ اور ‎escalation rules‎ کے تحت رہیں۔‏"
+  },
+  {
+    "section": "‏۷۔ مختلف ‎sectors‎ کے ‎Voice AI use cases‎‏ > ۷۔۱ بینکاری اور مالیاتی ادارے > ‏خودکار ‎workflows‎‏",
+    "content": "‏‎Products‎ اور ‎services‎ کی معلومات‏\n‏‎Branch‎، ‎ATM‎ اور ‎service guidance‎‏\n‏‎Card status‎ اور ‎service FAQs‎‏\n‏‎Complaint/request‎ کا اندراج‏\n‏‎Application‎ کا ‎follow-up‎‏\n‏‎Payment‎ اور ‎renewal reminders‎‏\n‏‎Feedback‎ اور ‎surveys‎‏\n‏دفتری اوقات کے بعد ‎basic assistance‎‏\nلازمی انسانی مداخلت  ‏‎Fraud‎، ‎disputed transaction‎، ‎vulnerable customer‎، ‎high-value request‎، ‎complex complaint‎ یا ‎authentication failure‎ فوراً ‎human team‎ کو۔‏\nPilot KPIs:‏ ‎Resolution rate‎، ‎response accuracy‎، ‎escalation rate‎، ‎average handling time‎، ‎customer experience‎، ‎latency‎، ‎operational reliability‎۔‏"
+  },
+  {
+    "section": "‏۷۔ مختلف ‎sectors‎ کے ‎Voice AI use cases‎‏ > ۷۔۲ حکومت اور عوامی خدمات",
+    "content": "مسئلہ:‏ ‎Citizen helplines‎، ‎benefit schemes‎، ‎licences‎، ‎complaints‎، ‎application status‎ اور ‎emergency information‎ میں ‎peak demand‎ کے دوران ‎queues‎ اور ‎inconsistent responses‎ بڑھتے ہیں۔‏\nVoice solution:‏ ‎Urdu-first public-service agent approved government knowledge‎، ‎case-management‎ اور ‎citizen portals‎ سے ‎information‎ دے، ‎complaint/reference number‎ بنائے اور ‎multilingual access‎ بہتر کرے۔‏"
+  },
+  {
+    "section": "‏۷۔ مختلف ‎sectors‎ کے ‎Voice AI use cases‎‏ > ۷۔۲ حکومت اور عوامی خدمات > ‏خودکار ‎workflows‎‏",
+    "content": "‏‎Scheme eligibility‎ اور ‎documents‎ کی رہنمائی‏\n‏‎Application‎ یا ‎case status‎‏\nComplaint registration\n‏‎Office location‎ اور ‎timing‎‏\n‏‎Appointment‎ یا ‎slot booking‎‏\nPublic campaign announcements\n‏شہری ‎feedback surveys‎‏\n‏متعلقہ ‎department‎ یا ‎queue‎ کو ‎routing‎‏\nلازمی انسانی مداخلت  ‏‎Emergency‎، ‎legal determination‎، ‎safeguarding‎، ‎political/public-safety sensitivity‎ یا ‎citizen distress‎۔‏\nPilot KPIs:‏ ‎First-contact resolution‎، ‎wait-time reduction‎، ‎complaint completeness‎، ‎accessibility‎، ‎after-hours availability‎۔‏"
+  },
+  {
+    "section": "‏۷۔ مختلف ‎sectors‎ کے ‎Voice AI use cases‎‏ > ‏۷۔۳ ‎Healthcare‎، ‎hospitals‎، ‎labs‎ اور ‎pharmacies‎‏",
+    "content": "مسئلہ:‏ ‎Switchboards appointment‎، ‎doctor schedule‎، ‎lab-report status‎، ‎prices‎ اور ‎home collection queries‎ سے بھر جاتے ہیں؛ ‎after-hours service‎ محدود ہوتی ہے۔‏\nVoice solution:‏ ‎Voice Agent hospital/lab systems‎ سے ‎appointment‎، ‎schedule‎ اور ‎report-readiness information‎ لے، ‎instructions‎ سنائے اور ‎non-clinical workflow complete‎ کرے۔‏"
+  },
+  {
+    "section": "‏۷۔ مختلف ‎sectors‎ کے ‎Voice AI use cases‎‏ > ‏۷۔۳ ‎Healthcare‎، ‎hospitals‎، ‎labs‎ اور ‎pharmacies‎‏ > ‏خودکار ‎workflows‎‏",
+    "content": "‏‎Appointment‎ بنانا، تبدیل یا ‎cancel‎ کرنا‏\n‏‎Doctor‎ کا ‎schedule‎‏\n‏‎Lab report‎ تیار ہونے کی ‎status‎‏\n‏‎Test price‎ اور ‎preparation instructions‎‏\nHome collection booking\n‏‎Pharmacy refill‎ اور ‎stock inquiry‎‏\n‏‎Branch location‎ اور ‎directions‎‏\nTelehealth session scheduling\nلازمی انسانی مداخلت  ‏‎Clinical advice‎، ‎diagnosis‎، ‎medication change‎، ‎urgent symptom‎، ‎emergency‎ یا ‎high-risk language‎ ہمیشہ ‎medical staff‎ کو۔‏\nPilot KPIs:‏ ‎Booking completion‎، ‎no-show reduction‎، ‎switchboard deflection‎، ‎report-status accuracy‎، ‎escalation speed‎۔‏"
+  },
+  {
+    "section": "‏۷۔ مختلف ‎sectors‎ کے ‎Voice AI use cases‎‏ > ‏۷۔۴ ‎Telecom operators‎‏",
+    "content": "مسئلہ:‏ ‎Balance‎، ‎bundles‎، ‎recharge‎، ‎billing‎، ‎SIM services‎، ‎roaming‎ اور ‎network complaints helplines‎ پر مسلسل ‎repetitive load‎ پیدا کرتے ہیں۔‏\nVoice solution:‏ ‎Operator-branded Urdu/English Voice Agent subscriber APIs‎ سے ‎self-care actions complete‎ کرے اور ‎app‎ میں ‎press-to-talk channel‎ بھی دے سکتا ہے۔‏"
+  },
+  {
+    "section": "‏۷۔ مختلف ‎sectors‎ کے ‎Voice AI use cases‎‏ > ‏۷۔۴ ‎Telecom operators‎‏ > ‏خودکار ‎workflows‎‏",
+    "content": "‏‎Balance‎، ‎minutes‎، ‎SMS‎ اور ‎MBs‎ کی ‎inquiry‎‏\n‏‎Package activate‎ یا ‎deactivate‎ کرنا‏\n‏‎Bill‎ اور ‎due-date reminders‎‏\nNetwork complaint ticket\n‏‎PUK‎، ‎SIM block‎ یا ‎replacement status‎‏\n‏‎MNP‎ اور ‎roaming status‎‏\n‏‎Recharge/load‎ مسائل‏\n‏‎Loyalty‎ اور ‎promotions‎ کی ‎inquiry‎‏\nلازمی انسانی مداخلت  ‏‎Identity ambiguity‎، ‎fraud‎، ‎regulatory complaint‎، ‎repeated failed action‎ یا ‎distressed caller‎۔‏\nPilot KPIs:‏ ‎Self-care completion‎، ‎call deflection‎، ‎ticket accuracy‎، ‎peak-hour availability‎، ‎repeat-call rate‎۔‏"
+  },
+  {
+    "section": "‏۷۔ مختلف ‎sectors‎ کے ‎Voice AI use cases‎‏ > ‏۷۔۵ ‎Fintech‎، ‎wallets‎، ‎digital banks‎ اور ‎lending‎‏",
+    "content": "مسئلہ:‏ ‎Wallet balance‎، ‎failed transfer‎، ‎KYC‎، ‎card issues‎، ‎onboarding status‎، ‎repayment‎ اور ‎collections‎ پر ‎high-volume support‎ درکار ہوتا ہے۔‏\nVoice solution:‏ ‎Authenticated agent transaction status check‎ کرے، ‎disputes log‎ کرے، ‎KYC steps‎ سمجھائے اور ‎compliant outbound reminders‎ چلائے۔‏"
+  },
+  {
+    "section": "‏۷۔ مختلف ‎sectors‎ کے ‎Voice AI use cases‎‏ > ‏۷۔۵ ‎Fintech‎، ‎wallets‎، ‎digital banks‎ اور ‎lending‎‏ > ‏خودکار ‎workflows‎‏",
+    "content": "‏‎Wallet balance‎ اور ‎mini-statement‎‏\n‏‎Transaction‎ کی ‎successful‎، ‎failed‎ یا ‎pending status‎‏\n‏‎Dispute‎ کا ابتدائی اندراج‏\n‏‎KYC‎ اور ‎document status‎‏\n‏‎Card activation‎ یا ‎freeze guidance‎‏\n‏‎IBAN‎، ‎Raast‎ اور ‎fees‎ کے ‎FAQs‎‏\nLoan application status\n‏‎EMI reminders‎ اور ابتدائی ‎collections‎‏\nلازمی انسانی مداخلت  ‏‎Fraud allegation‎، ‎account takeover‎، ‎vulnerable borrower‎، ‎disputed collection‎ یا ‎complex financial complaint‎۔‏\nPilot KPIs:‏ ‎Dispute completeness‎، ‎authentication success‎، ‎collection contact rate‎، ‎false routing‎، ‎compliance exceptions‎۔‏"
+  },
+  {
+    "section": "‏۷۔ مختلف ‎sectors‎ کے ‎Voice AI use cases‎‏ > ‏۷۔۶ ‎E-commerce‎، ‎Q-commerce‎ اور ‎food delivery‎‏",
+    "content": "مسئلہ:‏ ‎Order status‎، ‎returns‎، ‎refunds‎، ‎COD verification‎، ‎substitutions‎ اور ‎rider/restaurant issues peak periods‎ میں ‎support‎ کو ‎overwhelm‎ کرتے ہیں۔‏\nVoice solution:‏ ‎Voice Agent order system‎ سے ‎live status‎ لے، ‎COD verify‎ کرے، ‎reschedule‎ یا ‎return workflow‎ شروع کرے اور ‎ticket create‎ کرے۔‏"
+  },
+  {
+    "section": "‏۷۔ مختلف ‎sectors‎ کے ‎Voice AI use cases‎‏ > ‏۷۔۶ ‎E-commerce‎، ‎Q-commerce‎ اور ‎food delivery‎‏ > ‏خودکار ‎workflows‎‏",
+    "content": "‏‎Order tracking‎ اور ‎ETA‎‏\n‏‎Return/refund‎ شروع کرنا اور ‎status‎‏\nOutbound COD verification\n‏‎Delivery reschedule‎ کرنا‏\n‏متبادل ‎item‎ کی ‎approval‎‏\n‏‎Address‎ یا ‎slot‎ تبدیل کرنا‏\nSeller/restaurant partner FAQs\n‏‎Complaint logging‎ اور ‎reference number‎‏\nلازمی انسانی مداخلت  ‏‎Safety‎، ‎harassment‎، ‎high-value fraud‎، ‎payment dispute‎ یا ‎repeated delivery failure‎۔‏\nPilot KPIs:‏ ‎COD confirmation rate‎، ‎cancellation reduction‎، ‎refund turnaround‎، ‎peak-hour response‎، ‎CSAT‎۔‏"
+  },
+  {
+    "section": "‏۷۔ مختلف ‎sectors‎ کے ‎Voice AI use cases‎‏ > ‏۷۔۷ ‎Logistics‎، ‎courier‎، ‎airlines‎ اور ‎travel‎‏",
+    "content": "مسئلہ:‏ ‎Parcel trace‎، ‎pickup‎، ‎merchant COD‎، ‎flight status‎، ‎cancellations‎، ‎baggage‎، ‎refund‎ اور ‎booking change queries‎ میں ‎sudden spikes‎ آتے ہیں۔‏\nVoice solution:‏ ‎Tracking/reservation APIs‎ کے ساتھ ‎agent live update‎ دے، ‎pickup‎ یا ‎simple change request‎ لے اور ‎disruption messaging automate‎ کرے۔‏"
+  },
+  {
+    "section": "‏۷۔ مختلف ‎sectors‎ کے ‎Voice AI use cases‎‏ > ‏۷۔۷ ‎Logistics‎، ‎courier‎، ‎airlines‎ اور ‎travel‎‏ > ‏خودکار ‎workflows‎‏",
+    "content": "‏‎Parcel‎ یا ‎flight status‎‏\nPickup booking\nDelivery rescheduling\nMerchant COD/remittance status\n‏‎PNR‎ اور ‎check-in guidance‎‏\n‏‎Baggage‎ اور ‎fare FAQs‎‏\n‏‎Refund‎ یا ‎change status‎‏\n‏‎Disruption‎ اور ‎delay announcements‎‏\nلازمی انسانی مداخلت  ‏‎Complex rebooking‎، ‎lost baggage escalation‎، ‎safety issue‎، ‎high-value shipment‎ یا ‎customs/legal case‎۔‏\nPilot KPIs:‏ ‎Status-call deflection‎، ‎tracking accuracy‎، ‎pickup completion‎، ‎disruption response‎، ‎transfer context quality‎۔‏"
+  },
+  {
+    "section": "‏۷۔ مختلف ‎sectors‎ کے ‎Voice AI use cases‎‏ > ‏۷۔۸ ‎Insurance‎‏",
+    "content": "مسئلہ:‏ ‎Policy details‎، ‎premium dues‎، ‎claim status‎، ‎first-notice-of-loss‎ اور ‎renewal calls repetitive‎ مگر ‎data-sensitive‎ ہوتی ہیں۔‏\nVoice solution:‏ ‎Verified Voice Agent policy/claim system‎ سے ‎permitted information‎ دے، ‎FNOL intake‎ مکمل کرے اور ‎renewal reminders‎ چلائے۔‏"
+  },
+  {
+    "section": "‏۷۔ مختلف ‎sectors‎ کے ‎Voice AI use cases‎‏ > ‏۷۔۸ ‎Insurance‎‏ > ‏خودکار ‎workflows‎‏",
+    "content": "Policy coverage FAQs\n‏‎Premium due‎ اور ‎payment guidance‎‏\nClaim status\n‏‎First Notice of Loss (FNOL)‎ کا اندراج‏\nKYC/document checklist\nRenewal reminders\n‏‎Survey‎ اور ‎callback booking‎‏\nلازمی انسانی مداخلت  ‏‎High-value/complex claim‎، ‎liability dispute‎، ‎fraud suspicion‎، ‎injury/death case‎ یا ‎coverage interpretation‎۔‏\nPilot KPIs:‏ ‎FNOL completeness‎، ‎renewal response‎، ‎claim-status accuracy‎، ‎adjuster transfer quality‎۔‏"
+  },
+  {
+    "section": "‏۷۔ مختلف ‎sectors‎ کے ‎Voice AI use cases‎‏ > ‏۷۔۹ تعلیم اور ‎EdTech‎‏",
+    "content": "مسئلہ:‏ ‎Admissions‎، ‎merit lists‎، ‎fees‎، ‎schedules‎، ‎scholarships‎ اور ‎transcript status‎ کے موسم میں ‎calls‎ کئی گنا بڑھ جاتی ہیں۔‏\nVoice solution:‏ ‎University/college systems‎ سے ‎linked Voice Agent application‎، ‎fee‎ اور ‎document status‎ بتائے اور ‎appointment schedule‎ کرے۔‏"
+  },
+  {
+    "section": "‏۷۔ مختلف ‎sectors‎ کے ‎Voice AI use cases‎‏ > ‏۷۔۹ تعلیم اور ‎EdTech‎‏ > ‏خودکار ‎workflows‎‏",
+    "content": "Admission status\n‏‎Fee due‎ اور ‎payment guidance‎‏\nClass/exam schedule\nMerit-list position\n‏‎Scholarship eligibility‎ اور ‎dates‎‏\nTranscript/document status\nCampus directions\nCounselling appointment\nلازمی انسانی مداخلت  ‏‎Admissions decision appeal‎، ‎safeguarding‎، ‎disability accommodation‎ یا ‎exceptional financial case‎۔‏\nPilot KPIs:‏ ‎Peak-season containment‎، ‎information accuracy‎، ‎appointment conversion‎، ‎repeated inquiry reduction‎۔‏"
+  },
+  {
+    "section": "‏۷۔ مختلف ‎sectors‎ کے ‎Voice AI use cases‎‏ > ‏۷۔۱۰ ‎Utilities‎، ‎ISPs‎ اور ‎municipal services‎‏",
+    "content": "مسئلہ:‏ ‎Outage‎، ‎billing‎، ‎fault‎، ‎restoration‎ اور ‎new connection events helplines‎ کو اچانک ‎congest‎ کرتے ہیں۔‏\nVoice solution:‏ ‎Voice Agent outage map‎، ‎billing‎ اور ‎ticketing systems‎ سے ‎live information‎ دے، ‎fault log‎ کرے اور ‎restoration updates‎ بھیجے۔‏"
+  },
+  {
+    "section": "‏۷۔ مختلف ‎sectors‎ کے ‎Voice AI use cases‎‏ > ‏۷۔۱۰ ‎Utilities‎، ‎ISPs‎ اور ‎municipal services‎‏ > ‏خودکار ‎workflows‎‏",
+    "content": "‏‎Outage‎ اور ‎area status‎‏\nBill inquiry\nPayment guidance\n‏‎Fault‎ یا ‎complaint ticket‎‏\nNew connection lead\nInstallation/restoration schedule\nPlanned maintenance announcements\nلازمی انسانی مداخلت  ‏‎Electrical/gas safety‎، ‎public hazard‎، ‎disputed billing‎، ‎vulnerable customer‎ یا ‎repeated unresolved fault‎۔‏\nPilot KPIs:‏ ‎Outage-call containment‎، ‎ticket completeness‎، ‎restoration update reach‎، ‎safety transfer time‎۔‏"
+  },
+  {
+    "section": "‏۷۔ مختلف ‎sectors‎ کے ‎Voice AI use cases‎‏ > ‏۷۔۱۱ ‎Real estate‎، ‎hospitality‎ اور ‎automotive‎‏",
+    "content": "مسئلہ:‏ ‎Availability‎، ‎pricing‎، ‎site visits‎، ‎reservations‎، ‎instalments‎، ‎service booking‎، ‎spare parts‎ اور ‎test drives warm leads‎ کو ‎staff capacity‎ سے باندھ دیتے ہیں۔‏\nVoice solution:‏ ‎Voice Agent lead qualify‎ کرے، ‎booking create‎ کرے، ‎availability/status‎ دے اور ‎follow-up automate‎ کرے۔‏"
+  },
+  {
+    "section": "‏۷۔ مختلف ‎sectors‎ کے ‎Voice AI use cases‎‏ > ‏۷۔۱۱ ‎Real estate‎، ‎hospitality‎ اور ‎automotive‎‏ > ‏خودکار ‎workflows‎‏",
+    "content": "‏‎Listing‎، ‎room‎ یا ‎vehicle availability‎‏\n‏‎Site visit‎ یا ‎reservation‎‏\nLead qualification\nInstalment status\nMaintenance grievance\nVehicle service booking\nSpare-parts availability\nTest-drive scheduling\nلازمی انسانی مداخلت  ‏‎Contract negotiation‎، ‎legal/property dispute‎، ‎custom pricing‎، ‎accident/safety issue‎ یا ‎high-value purchase decision‎۔‏\nPilot KPIs:‏ ‎Lead response time‎، ‎booking conversion‎، ‎no-show rate‎، ‎qualified handoff‎، ‎follow-up completion‎۔‏"
+  },
+  {
+    "section": "‏۷۔ مختلف ‎sectors‎ کے ‎Voice AI use cases‎‏ > ‏۷۔۱۲ ‎Retail‎، ‎FMCG‎، ‎media‎ اور ‎content‎‏",
+    "content": "مسئلہ:‏ ‎Store information‎، ‎loyalty‎، ‎orders‎، ‎campaigns‎، ‎announcements‎ اور ‎localized audio content‎ کی ‎demand‎ مسلسل بڑھتی ہے۔‏\nVoice solution:‏ ‎TTS high-quality content‎ بنائے، جبکہ ‎Voice Agent store/order/loyalty workflows‎ اور ‎customer feedback‎ سنبھالے۔‏"
+  },
+  {
+    "section": "‏۷۔ مختلف ‎sectors‎ کے ‎Voice AI use cases‎‏ > ‏۷۔۱۲ ‎Retail‎، ‎FMCG‎، ‎media‎ اور ‎content‎‏ > ‏خودکار ‎workflows‎‏",
+    "content": "‏‎Store hours‎ اور ‎stock inquiry‎‏\n‏‎Loyalty balance‎ اور ‎redemption‎‏\n‏‎Order‎ یا ‎reservation‎‏\nComplaint intake\nOutbound CSAT survey\nUrdu/Arabic announcements\n‏‎Audiobooks‎ اور ‎storytelling‎‏\n‏‎Training‎ اور ‎accessibility audio‎‏\nلازمی انسانی مداخلت  ‏‎Brand-sensitive crisis‎، ‎legal/content rights issue‎، ‎customer safety‎ یا ‎complex complaint‎۔‏\nPilot KPIs:‏ ‎Content turnaround‎، ‎order conversion‎، ‎loyalty use‎، ‎survey completion‎، ‎pronunciation acceptance‎۔‏"
+  },
+  {
+    "section": "‏۸۔ ‎Banking Voice AI Pilot framework‎‏",
+    "content": "Recommended approach  ‏ایک کم-‎risk‎، ‎clearly defined use case‎ سے ‎controlled pilot‎ شروع کریں؛ ‎test‎ کریں، ‎objective KPIs measure‎ کریں، ‎security review‎ مکمل کریں اور صرف ‎proven value‎ کے بعد ‎scale-up‎ کریں۔‏"
+  },
+  {
+    "section": "‏۸۔ ‎Banking Voice AI Pilot framework‎‏ > ‏‎Pilot‎ کے مراحل‏",
+    "content": "‏‎Use-case selection‎ — ‎repetitive‎، ‎high-volume‎، ‎measurable‎ اور ‎low-risk interaction‎ منتخب کریں۔‏\n‏‎Agent configuration‎ — ‎approved information‎، ‎scripts‎، ‎policies‎، ‎pronunciation‎ اور ‎escalation rules configure‎ کریں۔‏\n‏‎Safe integration‎ — صرف ‎required systems‎، ‎least-privilege APIs‎، ‎allow-listed actions‎ اور ‎audit logging‎۔‏\n‏‎Controlled evaluation‎ — ‎agreed call volume‎، ‎test users‎، ‎fallback route‎ اور ‎monitoring‎ کے ساتھ ‎pilot‎ چلائیں۔‏\n‏‎Measurement‎ — ‎bank‎ اور ‎CallRolin‎ مشترکہ ‎scorecard‎ پر ‎outcomes evaluate‎ کریں۔‏\n‏‎Scale decision‎ — ‎accuracy‎، ‎security‎، ‎reliability‎ اور ‎ROI threshold‎ پورا ہونے پر ‎phased expansion‎۔‏"
+  },
+  {
+    "section": "‏۸۔ ‎Banking Voice AI Pilot framework‎‏ > Pilot performance scorecard",
+    "content": "‏‎Conversation Success Rate‎ — کیا ‎user intent‎ صحیح سمجھا اور ‎workflow‎ مکمل ہوا؟‏\n‏‎Response Accuracy‎ — ‎approved source/API‎ کے مطابق جواب کتنا درست تھا؟‏\n‏‎Customer Experience‎ — ‎clarity‎، ‎voice naturalness‎، ‎effort‎ اور ‎satisfaction‎۔‏\n‏‎Call Handling Time‎ — ‎automated‎ اور ‎escalated‎ دونوں ‎paths‎ کا ‎duration‎۔‏\n‏‎Escalation Rate & Quality‎ — کتنی ‎calls‎ منتقل ہوئیں اور ‎context‎ کتنا مکمل تھا؟‏\n‏‎Voice Quality‎ — ‎pronunciation‎، ‎pacing‎، ‎numbers‎، ‎names‎ اور ‎mixed-language quality‎۔‏\n‏‎System Latency‎ — ‎first response‎، ‎turn latency‎ اور ‎end-to-end perceived delay‎۔‏\n‏‎Operational Reliability‎ — ‎uptime‎، ‎error rate‎، ‎API failures‎ اور ‎fallback success‎۔‏\n‏‎Workload Reduction‎ — ‎routine volume‎ سے ‎human team‎ پر کتنا اثر ہوا؟‏"
+  },
+  {
+    "section": "‏۹۔ ‎Security‎، ‎Privacy‎ اور ‎Data Governance‎‏ > ‏۹۔۱ ‎Data-flow‎ کے انتخاب‏",
+    "content": "Regulatory wording  ‏‎On-premise deployment SBP/PTA-aligned data-residency requirements‎ کو ‎support‎ کر سکتی ہے، مگر یہ خود کوئی ‎regulatory certification‎ یا ‎automatic compliance guarantee‎ نہیں۔ ‎Final compliance bank/department policies‎، ‎architecture‎، ‎legal review‎، ‎controls‎ اور ‎signed agreement‎ پر منحصر ہوگی۔‏"
+  },
+  {
+    "section": "‏۹۔ ‎Security‎، ‎Privacy‎ اور ‎Data Governance‎‏ > ‏۹۔۲ ‎Publicly stated security controls‎‏",
+    "content": "‏‎Encryption in transit (TLS)‎؛ ‎Trust Centre at-rest encryption‎ بھی ‎state‎ کرتا ہے۔‏\n‏‎API keys hashed at rest‎ اور ‎project scope‎ کے ساتھ۔‏\n‏‎Role-based access control‎ اور ‎restricted production access‎۔‏\n‏‎Network separation between customer workloads and internal systems‎۔‏\n‏‎Vulnerability monitoring‎، ‎dependency review‎ اور ‎security patching‎۔‏\n‏‎Audit logging‎، ‎incident investigation‎، ‎containment‎ اور ‎remediation process‎۔‏\n‏‎Responsible security disclosure via hello‎@‎callrolin.com‎۔‏\n‏‎Website Trust Centre‎ پر بعض ‎operational details placeholders‎ کے طور پر موجود ہیں، مثلاً ‎exact backup frequency‎، ‎patch cadence‎ اور ‎incident-notification timeframe‎۔ ‎Enterprise proposal‎ یا ‎contract‎ میں صرف ‎verified commitments‎ شامل کیے جانے چاہئیں۔‏"
+  },
+  {
+    "section": "‏۹۔ ‎Security‎، ‎Privacy‎ اور ‎Data Governance‎‏ > ‏۹۔۳ ‎Privacy‎ کے بنیادی اصول‏",
+    "content": "‏‎Data minimization‎ — صرف ‎service delivery‎، ‎billing‎، ‎security‎ اور ‎agreed workflow‎ کے لیے ضروری ‎data collect/process‎ کرنا۔‏\n‏‎Purpose transparency‎ — ‎account/contact‎، ‎audio/text‎، ‎usage logs‎ اور ‎payment processing‎ واضح کرنا۔‏\n‏‎Retention control‎ — ‎request logs‎ کو ‎plan/contract‎ کے مطابق ‎delete‎ کرنا؛ ‎billing records‎ قانونی ضرورت پر زیادہ عرصہ رہ سکتے ہیں۔‏\n‏‎User rights‎ — ‎access‎، ‎correction‎، ‎deletion‎ اور ‎machine-readable copy request‎۔‏\n‏‎No sale‎ — ‎Privacy Policy‎ کے مطابق ‎personal data‎ فروخت نہیں کیا جاتا۔‏\n‏‎Custom voice consent‎ — ‎documented‎، ‎verifiable voice-owner consent‎ کے بغیر ‎cloning/synthesis‎ نہیں۔‏\n‏‎Enterprise governance‎ — ‎DPA‎، ‎subprocessor disclosure‎، ‎retention‎، ‎training use‎ اور ‎deletion terms signed agreement‎ میں واضح کرنا۔‏"
+  },
+  {
+    "section": "‏۹۔ ‎Security‎، ‎Privacy‎ اور ‎Data Governance‎‏ > ‏۹۔۴ ‎Model improvement‎ سے متعلق ‎disclosure‎‏",
+    "content": "‏موجودہ ‎Privacy Policy‎ کے مطابق ‎CallRolin customer audio‎ اور ‎text‎ کو ‎voice models‎ بہتر یا ‎train‎ کرنے کے لیے استعمال کر سکتا ہے۔ ‎Regulated‎ یا ‎confidential workloads‎ میں اس ‎point‎ کو ‎DPA/Enterprise agreement‎ میں واضح طور پر ‎address‎ کرنا ضروری ہے—خصوصاً ‎purpose‎، ‎legal basis‎، ‎retention‎، ‎access‎، ‎opt-out/contractual restriction (‎اگر ‎agreed‎ ہو)، ‎deletion‎ اور ‎on-premise boundaries‎۔ یہ ‎document‎ کوئی ایسی ‎opt-out guarantee‎ نہیں بناتا جو ‎published policy‎ یا ‎signed contract‎ میں موجود نہ ہو۔‏"
+  },
+  {
+    "section": "‏۱۰۔ ‎Commercial model‎ اور ‎public pricing‎‏",
+    "content": "‏‎CallRolin subscription-based SaaS‎ اور ‎licence-based on-premise‎ دونوں ‎models‎ پیش کرتا ہے۔ ‎Public pricing 2 September 2026‎ کو درج ذیل تھی؛ ‎final quotation‎، ‎tax‎، ‎currency‎، ‎custom voice‎، ‎support‎، ‎infrastructure‎ اور ‎enterprise scope‎ کے مطابق تبدیل ہو سکتی ہے۔‏\nPricing source: https://callrolin.com/pricing — accessed 2 September 2026. Prices and plan features are subject to change."
+  },
+  {
+    "section": "‏۱۰۔ ‎Commercial model‎ اور ‎public pricing‎‏ > ‏‎Enterprise cost‎ کے اہم حصے‏",
+    "content": "‏‎Discovery‎، ‎workflow design‎ اور ‎pilot configuration‎‏\nCustom voice / pronunciation / domain adaptation\n‏‎API‎، ‎CRM‎، ‎core-system‎ یا ‎telephony integration‎‏\n‏‎Infrastructure sizing‎، ‎GPU/server requirements‎ اور ‎deployment‎‏\n‏‎Security hardening‎، ‎monitoring‎، ‎audit and backup configuration‎‏\n‏‎Annual/perpetual licence‎، ‎model updates‎، ‎support‎ اور ‎SLA‎‏\n‏‎Usage/concurrency‎، ‎environments (dev/UAT/prod)‎ اور ‎disaster recovery‎‏"
+  },
+  {
+    "section": "‏۱۱۔ ‎Leadership‎، ‎ecosystem‎ اور ‎traction‎‏ > Leadership team",
+    "content": "Names and roles are based on company-supplied information; English spellings should be confirmed before public publication."
+  },
+  {
+    "section": "‏۱۱۔ ‎Leadership‎، ‎ecosystem‎ اور ‎traction‎‏ > ‏‎Strategic backing‎ اور ‎ecosystem‎‏",
+    "content": "‏‎DevRolin Private Limited‎ — ‎company-supplied strategic/technical backing‎۔‏\n‏‎CyberVision International‎ — ‎company-supplied backing and delivered Voice AI project reference‎۔‏\n‏‎Technology‎، ‎startup‎، ‎integration‎ اور ‎academic partnerships‎ کے لیے ‎open ecosystem direction‎۔‏\n‏‎CallRolin‎ کی بنیاد ‎Bilal Raja‎ نے رکھی؛ وہ کمپنی کے ‎founder‎ اور ‎CEO‎ کے طور پر پہچانے جاتے ہیں۔‏\n‏کمپنی کو ‎National Incubation Center (NIC) Islamabad‎ میں ‎incubate‎ کیا گیا، جو پاکستان کے معروف ‎startup incubation‎ پلیٹ فارمز میں شامل ہے۔‏\n‏‎CallRolin (Private) Limited‎ کو ‎Securities and Exchange Commission of Pakistan (SECP)‎ کے ساتھ ایک ‎registered private limited company‎ کے طور پر ‎company-supplied information‎ میں بیان کیا گیا ہے۔‏\n‏کمپنی ‎World Startup Championship 2026‎ جیسے ‎international startup competitions‎ کے لیے ‎pitch material‎ اور ‎positioning‎ تیار کر رہی ہے۔‏\n‏یہ تفصیلات بھی ‎company-supplied information‎ پر مبنی ہیں اور عوامی ‎publication‎ سے پہلے ‎verification‎ کی ضرورت ہے۔‏"
+  },
+  {
+    "section": "‏۱۱۔ ‎Leadership‎، ‎ecosystem‎ اور ‎traction‎‏ > ‏‎Projects‎ اور ‎traction‎‏",
+    "content": "Responsible proof  ‏‎Client logo‎، ‎testimonial‎، ‎production status‎، ‎call volume‎ یا ‎performance improvement‎ صرف ‎written client approval‎ اور ‎verified measurement‎ کے بعد ‎public material‎ میں شامل ہونا چاہیے۔‏"
+  },
+  {
+    "section": "‏۱۲۔ ‎Pakistan‎ سے ‎MENA‎ تک ‎growth roadmap‎‏",
+    "content": "‏‎Long-term goal CallRolin‎ کو ‎Pakistan-focused Urdu Voice AI provider‎ سے ‎MENA-serving regional speech platform‎ بنانا ہے۔ ‎Expansion‎ کا مرکز ‎Arabic voice quality‎، ‎dialect coverage‎، ‎enterprise data control‎، ‎telecom readiness‎ اور ‎culturally appropriate customer experience‎ ہوگا۔‏"
+  },
+  {
+    "section": "‏۱۲۔ ‎Pakistan‎ سے ‎MENA‎ تک ‎growth roadmap‎‏ > ‏‎MENA‎ کے ‎priority use cases‎‏",
+    "content": "Arabic/English customer support and AI reception\nGovernment citizen services and public announcements\n‏‎Banking‎، ‎fintech‎، ‎insurance and collections with data-control requirements‎‏\n‏‎Healthcare appointments‎، ‎reminders and non-clinical service navigation‎‏\n‏‎Hospitality‎، ‎airlines‎، ‎real estate and mobility‎‏\n‏‎Localized media‎، ‎training‎، ‎accessibility and corporate content‎‏"
+  },
+  {
+    "section": "‏۱۳۔ ‎Responsible Voice AI framework‎‏ > بنیادی اصول",
+    "content": "‏‎Consent‎ — ‎custom voice‎ کے لیے ‎voice owner‎ کی ‎explicit‎، ‎documented‎ اور ‎verifiable permission‎۔‏\n‏‎Disclosure‎ — جہاں مناسب ہو ‎caller‎ کو بتایا جائے کہ وہ ‎AI system‎ سے بات کر رہا ہے۔‏\n‏‎Purpose limitation‎ — ‎approved use case‎ سے باہر ‎actions‎ یا ‎data use‎ نہ کیا جائے۔‏\n‏‎Safety escalation‎ — ‎fraud‎، ‎crisis‎، ‎medical‎، ‎harassment‎، ‎legal‎ اور ‎public-safety cases human team‎ کو۔‏\n‏‎Grounded responses‎ — ‎approved knowledge/API‎ کے بغیر ‎sensitive factual answer‎ نہ دینا۔‏\n‏‎Auditability‎ — ‎request‎، ‎decision‎، ‎API action‎، ‎escalation‎ اور ‎configuration logs‎۔‏\n‏‎Human control‎ — ‎organization kill switch‎، ‎fallback routes‎، ‎review and override‎۔‏\n‏‎No impersonation‎ — ‎deception‎، ‎fraud‎، ‎election/public-safety disinformation‎، ‎harassment‎ یا ‎unlawful use‎ منع۔‏\n‏‎Deletion‎ — ‎custom voice‎ اور ‎training data deletion requests documented process‎ کے ذریعے۔‏"
+  },
+  {
+    "section": "‏۱۳۔ ‎Responsible Voice AI framework‎‏ > ‏‎Deployment‎ سے پہلے ‎governance checklist‎‏",
+    "content": "‏‎Use case‎، ‎legal basis‎ اور ‎prohibited actions approve‎ کریں۔‏\n‏‎Data inventory‎، ‎retention‎، ‎training-use‎ اور ‎subprocessor terms approve‎ کریں۔‏\n‏‎Authentication levels‎ اور ‎API permissions define‎ کریں۔‏\n‏‎Human escalation rules‎، ‎hours‎، ‎queues‎ اور ‎emergency fallback test‎ کریں۔‏\n‏‎Urdu/Arabic pronunciation‎، ‎numbers‎، ‎names‎ اور ‎domain terms validate‎ کریں۔‏\n‏‎Bias/error scenarios‎، ‎noisy calls‎، ‎code-switching‎ اور ‎vulnerable users test‎ کریں۔‏\n‏‎KPIs‎، ‎acceptance thresholds‎، ‎incident response‎ اور ‎rollback approve‎ کریں۔‏\n‏‎Production monitoring‎، ‎periodic review‎ اور ‎change-control process establish‎ کریں۔‏"
+  },
+  {
+    "section": "‏۱۴۔ ‎Engagement model‎ اور اگلے اقدامات‏ > ‏تجویز کردہ ‎enterprise engagement‎‏",
+    "content": "30–45 minute business and technical discovery session\nOne low-risk use case and expected volume selection\nData/API/security questionnaire and architecture workshop\n‏‎Pilot statement of work‎، ‎KPIs‎، ‎timeline and responsibilities‎‏\n‏‎UAT with approved scripts‎، ‎accents‎، ‎edge cases and escalation‎‏\nControlled live pilot with weekly measurement\nJoint go/no-go and phased scale-up decision\nOur ask  ‏ایک ‎pilot implement‎ کریں، اسے ‎secure environment‎ میں ‎test‎ کریں، ‎objective results measure‎ کریں، اور ‎scale‎ صرف اسی وقت کریں جب ‎value‎ ثابت ہو۔‏"
+  },
+  {
+    "section": "‏ضمیمہ ‎A‎ — ‎Privacy Policy‎ کا ‎Urdu‎ خلاصہ‏",
+    "content": "Last updated on website: 7 August 2026. Source: https://callrolin.com/legal/privacy"
+  },
+  {
+    "section": "‏ضمیمہ ‎A‎ — ‎Privacy Policy‎ کا ‎Urdu‎ خلاصہ‏ > ‏‎A.1‎ ہم کون سی معلومات ‎collect‎ کرتے ہیں‏",
+    "content": "‏‎Account & Contact Data‎ میں ‎full name‎، ‎company name‎، ‎email‎ اور ‎phone number‎ شامل ہیں۔ ‎Audio & Text Data‎ میں ‎TTS‎ کے لیے دیا گیا ‎text‎، ‎STT‎ کے لیے دیا گیا ‎audio‎ اور ‎generated output‎ شامل ہیں۔ ‎Usage Data‎ میں ‎API request logs‎، ‎consumed minutes‎ اور ‎dashboard interactions‎ شامل ہیں۔ ‎Billing information Paddle.com process/store‎ کرتا ہے؛ ‎CallRolin full payment card details store‎ نہیں کرتا۔‏"
+  },
+  {
+    "section": "‏ضمیمہ ‎A‎ — ‎Privacy Policy‎ کا ‎Urdu‎ خلاصہ‏ > ‏‎A.2‎ معلومات کا استعمال‏",
+    "content": "‏‎Data service operate‎ کرنے، ‎TTS/STT request process‎ کرنے، ‎usage meter‎ اور ‎bill‎ کرنے، ‎account/service communication‎، ‎security‎، ‎abuse prevention‎ اور ‎legal obligations‎ کے لیے استعمال ہوتا ہے۔ ‎Published policy‎ یہ بھی بیان کرتی ہے کہ ‎customer audio/text voice models improve‎ یا ‎train‎ کرنے میں استعمال ہو سکتا ہے۔ ‎Standard processing Google Cloud‎ پر ہوتا ہے؛ ‎enterprise customer on-premise deployment‎ منتخب کر سکتا ہے۔‏"
+  },
+  {
+    "section": "‏ضمیمہ ‎A‎ — ‎Privacy Policy‎ کا ‎Urdu‎ خلاصہ‏ > A.3 Storage & retention",
+    "content": "‏‎Standard cloud plans‎ پر ‎audio/text CallRolin cloud infrastructure‎ پر ‎process‎ ہوتے ہیں۔ ‎Enterprise on-premise‎ میں ‎data customer environment‎ میں رہتا ہے۔ ‎Privacy page‎ عمومی طور پر ‎request logs‎ کے لیے ‎30 days‎ بتاتی ہے، جبکہ ‎pricing page Starter‎ کے لیے ‎7 days‎، ‎Business‎ کے لیے ‎30 days‎ اور ‎Enterprise‎ کے لیے ‎custom retention‎ دکھاتی ہے۔ ‎Billing records law/tax requirement‎ کے مطابق زیادہ عرصہ رکھے جا سکتے ہیں۔‏"
+  },
+  {
+    "section": "‏ضمیمہ ‎A‎ — ‎Privacy Policy‎ کا ‎Urdu‎ خلاصہ‏ > A.4 Your rights",
+    "content": "‏‎User personal data‎ تک ‎access‎، ‎correction‎، ‎deletion‎ اور ‎structured machine-readable copy‎ کی ‎request‎ کر سکتا ہے۔ ‎Request‎ کے لیے ‎hello‎@‎callrolin.com‎ پر ‎subject‎ “‎Data Request‎” کے ساتھ ‎email‎ کریں۔ ‎Company 30 days‎ میں ‎response‎ کا ہدف رکھتی ہے اور ‎personal data‎ فروخت نہ کرنے کا بیان دیتی ہے۔‏"
+  },
+  {
+    "section": "‏ضمیمہ ‎A‎ — ‎Privacy Policy‎ کا ‎Urdu‎ خلاصہ‏ > A.5 Regional hosting",
+    "content": "‏‎Starter/Business standard hosting Google Cloud‎ پر ہے؛ ‎pricing/subprocessor pages asia-south1 (Mumbai‎, ‎India)‎ بتاتی ہیں۔ ‎Pakistan‎ یا ‎client environment‎ میں ‎data residency‎ کی ضرورت رکھنے والے ‎enterprise clients on-premise deployment‎ لے سکتے ہیں، جہاں ‎processing client-controlled environment‎ میں رہتی ہے۔‏"
+  },
+  {
+    "section": "‏ضمیمہ ‎B‎ — ‎Terms of Service‎ کا ‎Urdu‎ خلاصہ‏",
+    "content": "Last updated on website: 7 August 2026. Source: https://callrolin.com/legal/terms"
+  },
+  {
+    "section": "‏ضمیمہ ‎B‎ — ‎Terms of Service‎ کا ‎Urdu‎ خلاصہ‏ > B.1 Acceptance and lawful use",
+    "content": "‏‎Service‎ استعمال کرنے سے ‎user CallRolin (Private) Limited‎ کے ‎Terms‎ قبول کرتا ہے۔ ‎Service‎ صرف ‎lawful purpose‎ اور ‎Acceptable Use/Voice AI policies‎ کے مطابق استعمال کی جا سکتی ہے۔ ‎Unlawful‎، ‎fraudulent‎، ‎deceptive‎، ‎harassing‎ یا ‎hateful content‎، بغیر ‎consent voice cloning‎، ‎reverse engineering‎، ‎misrepresentation‎ اور ‎rate-limit/quota abuse‎ منع ہیں۔‏"
+  },
+  {
+    "section": "‏ضمیمہ ‎B‎ — ‎Terms of Service‎ کا ‎Urdu‎ خلاصہ‏ > B.2 Accounts & API keys",
+    "content": "‏‎User‎ اپنے ‎credentials‎ اور ‎API keys‎ کی ‎confidentiality‎ اور ان کے تحت ہونے والی ‎activity‎ کا ذمہ دار ہے۔ ‎Unauthorized use‎ کا شبہ ہو تو فوراً ‎hello‎@‎callrolin.com‎ کو اطلاع دی جائے۔ ‎API keys plan limits‎ کے مطابق ‎issued‎ ہوتی ہیں اور ‎organization‎ سے باہر ‎share‎ نہیں کی جا سکتیں۔‏"
+  },
+  {
+    "section": "‏ضمیمہ ‎B‎ — ‎Terms of Service‎ کا ‎Urdu‎ خلاصہ‏ > B.3 Payment & billing",
+    "content": "‏‎Starter‎ اور ‎Business monthly subscription plans‎ ہیں؛ ‎Enterprise custom agreement/invoice‎ پر ہو سکتا ہے۔ ‎Paddle.com Merchant of Record‎ اور ‎payment processor‎ ہے۔ ‎Subscription‎ ہر ‎billing cycle‎ کے آخر میں ‎auto-renew‎ ہوتا ہے جب تک ‎renewal date‎ سے پہلے ‎cancel‎ نہ کیا جائے۔ ‎Included minutes‎ سے زیادہ ‎usage plan overage rate‎ پر ‎bill‎ ہوتا ہے۔‏"
+  },
+  {
+    "section": "‏ضمیمہ ‎B‎ — ‎Terms of Service‎ کا ‎Urdu‎ خلاصہ‏ > B.4 Cancellation, termination & liability",
+    "content": "‏‎User dashboard‎ سے ‎cancel‎ کر سکتا ہے؛ ‎cancellation current billing period‎ کے آخر میں ‎effective‎ ہوتا ہے۔ ‎Violation‎، ‎non-payment‎ یا ‎misuse‎ پر ‎access suspend/terminate‎ کیا جا سکتا ہے۔ ‎Service‎ “‎as is‎” اور “‎as available‎” دی جاتی ہے؛ ‎uninterrupted availability‎ یا ‎specific STT/TTS accuracy guarantee‎ نہیں کی جاتی، اور ‎liability applicable law‎ کی ‎maximum permitted extent‎ تک محدود ہے۔‏"
+  },
+  {
+    "section": "‏ضمیمہ ‎B‎ — ‎Terms of Service‎ کا ‎Urdu‎ خلاصہ‏ > B.5 Governing law",
+    "content": "‏‎Terms‎ پاکستان کے ‎laws‎ کے مطابق ‎govern‎ ہوتے ہیں اور ‎disputes Islamabad‎، ‎Pakistan‎ کی ‎courts‎ کے ‎exclusive jurisdiction‎ میں ہیں۔‏"
+  },
+  {
+    "section": "‏ضمیمہ ‎C‎ — ‎Acceptable Use‎ اور ‎Voice AI Policy‎‏",
+    "content": "Sources: https://callrolin.com/legal/acceptable-use and https://callrolin.com/legal/voice-ai-policy\n‏‎False‎، ‎misleading‎، ‎deceptive‎ یا ‎fraudulent content‎ بنانا یا پھیلانا منع ہے۔‏\n‏‎Applicable law‎، ‎intellectual property‎، ‎privacy rights‎ یا ‎third-party rights‎ کی خلاف ورزی منع ہے۔‏\n‏‎Hate speech‎، ‎harassment‎، ‎discrimination‎ اور ‎illegal activity promotion‎ منع ہے۔‏\n‏کسی ‎real person‎ کی ‎voice clone/imitate/synthesize‎ کرنے کے لیے ‎explicit‎، ‎verifiable consent‎ لازم ہے۔‏\n‏‎Fraud‎، ‎defamation‎، ‎election/public-safety disinformation‎، ‎impersonation‎ یا ‎harassment‎ کے لیے ‎synthetic voice‎ استعمال نہیں ہو سکتی۔‏\n‏‎Custom voice requests manual approval‎ سے گزرتی ہیں؛ ‎proof of consent‎ مانگا جا سکتا ہے۔‏\n‏‎Voice owner custom voice‎ اور ‎underlying training data deletion‎ کی ‎request‎ کر سکتا ہے؛ ‎approved deletion‎ کا ‎stated target 30 days‎ ہے۔‏\n‏‎Misuse report‎ کرنے کے لیے ‎hello‎@‎callrolin.com‎ پر ‎subject‎ “‎Abuse Report‎” استعمال کیا جائے۔‏\n‏‎Violation‎ پر ‎account suspend/terminate‎ اور ‎law enforcement cooperation‎ ہو سکتی ہے۔‏"
+  },
+  {
+    "section": "‏ضمیمہ ‎D‎ — ‎DPA‎ اور ‎Subprocessors‎ کا خلاصہ‏ > D.1 Data Processing Agreement",
+    "content": "‏‎DPA‎ اس وقت ‎apply‎ ہوتا ہے جب ‎CallRolin customer/controller‎ کی طرف سے ‎personal data process‎ کرتا ہے۔ ‎Published DPA audio‎، ‎text‎ اور ‎account data processing‎، ‎usage/billing‎، ‎model improvement disclosure‎، ‎subprocessors‎، ‎TLS/access controls/audit logging‎ اور ‎international transfers‎ کا ‎high-level framework‎ دیتی ہے۔ ‎Enterprise clients‎ کو ‎detailed DPA‎، ‎processing schedule‎، ‎data categories‎، ‎retention‎، ‎deletion‎، ‎incident notice‎، ‎audit rights‎ اور ‎on-premise responsibilities signed form‎ میں مکمل کرنے چاہئیں۔‏"
+  },
+  {
+    "section": "‏ضمیمہ ‎D‎ — ‎DPA‎ اور ‎Subprocessors‎ کا خلاصہ‏ > D.3 Due diligence",
+    "content": "‏‎Published page‎ کے مطابق ‎CallRolin subprocessor‎ کی ‎security/data-protection practices evaluate‎ کرتا ہے اور ‎changes‎ سے پہلے ‎page update‎ کرنے کا ارادہ رکھتا ہے؛ ‎Enterprise customers agreement‎ کے ذریعے ‎advance notice‎ مانگ سکتے ہیں۔‏"
+  },
+  {
+    "section": "‏ضمیمہ ‎E‎ — ‎Sources‎ اور ‎publication checks‎‏ > ‏‎External publication‎ سے پہلے ‎checklist‎‏",
+    "content": "‏‎Team members‎ کے ‎English spellings‎ اور ‎titles confirm‎ کریں۔‏\n‏‎H&H/HNH Visa Consultants‎ کا ‎exact legal name‎ اور ‎permission confirm‎ کریں۔‏\n‏‎CyberVision reference‎ کے ‎scope‎، ‎status‎ اور ‎public-use permission confirm‎ کریں۔‏\n‏‎Website Trust Centre‎ سے ‎placeholder text remove/verify‎ کریں۔‏\n‏‎Privacy retention copy‎ کو ‎pricing plan retention‎ کے ساتھ ‎harmonize‎ کریں۔‏\n‏‎Standard cloud region‎ اور ‎cross-border processing wording consistent‎ کریں۔‏\n‏‎WhatsApp/Zoom‎ اور ‎telephony connectors‎ کی ‎status labels current‎ رکھیں۔‏\n‏‎Performance metrics‎ کے ‎benchmark method‎ اور ‎production applicability verify‎ کریں۔‏\n‏‎Security certifications‎ صرف ‎completion/evidence‎ کے بعد ‎claim‎ کریں۔‏\nClosing message  ‏‎CallRolin‎ کا وعدہ صرف ایک ‎synthetic voice‎ بنانا نہیں؛ مقصد ایسی ‎regional Voice AI infrastructure‎ تیار کرنا ہے جو لوگوں کی زبان سمجھے، ‎enterprise systems‎ کے ساتھ ‎action‎ لے، ‎sensitive data‎ پر ‎control‎ دے اور انسان کو وہاں شامل رکھے جہاں ‎judgment‎ واقعی ضروری ہے۔‏"
+  }
+]
