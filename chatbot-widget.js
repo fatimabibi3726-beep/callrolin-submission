@@ -1,11 +1,7 @@
-/**
- * CallRolin Chatbot Widget
- * Isse kisi bhi page mein add karne ke liye, page ke </body> se pehle ye line daalein:
- * <script src="/chatbot-widget.js"></script>
- */
+
 
 (function () {
-  // ---------- Styles inject karein ----------
+
   const style = document.createElement("style");
   style.textContent = `
     #cr-chat-toggle {

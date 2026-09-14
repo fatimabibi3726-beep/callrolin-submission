@@ -1,9 +1,4 @@
-// Ye file Vercel serverless function hai. Jab frontend chatbot se sawal aayega,
-// ye function chalega aur RAG ka pura process karega:
-// 1. Sawal ko embed karna
-// 2. Supabase se relevant chunks dhoondna
-// 3. Gemini se un chunks ke base par jawab banwana
-// 4. Jawab wapas frontend ko bhejna
+
 
 import { GoogleGenAI } from "@google/genai";
 import { createClient } from "@supabase/supabase-js";
@@ -15,7 +10,7 @@ const supabase = createClient(
 );
 
 export default async function handler(req, res) {
-  // Sirf POST requests allow karein
+ 
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }
@@ -27,7 +22,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    // --- Step 1: User ke sawal ko embed karein ---
+  
     const embedResult = await ai.models.embedContent({
       model: "gemini-embedding-001",
       contents: message,
@@ -38,7 +33,7 @@ export default async function handler(req, res) {
     });
     const queryEmbedding = embedResult.embeddings[0].values;
 
-    // --- Step 2: Supabase se relevant chunks dhoondein ---
+   
     const { data: matches, error: matchError } = await supabase.rpc(
       "match_callrolin_documents",
       {
@@ -50,7 +45,7 @@ export default async function handler(req, res) {
 
     if (matchError) throw matchError;
 
-    // --- Step 3: Agar koi relevant chunk na mile ---
+    
     if (!matches || matches.length === 0) {
       return res.status(200).json({
         answer:
@@ -60,7 +55,7 @@ export default async function handler(req, res) {
 
     const context = matches.map((m) => m.content).join("\n\n---\n\n");
 
-    // --- Step 4: Gemini se jawab generate karwayein ---
+   
     const prompt = `Aap CallRolin (ek AI Voice Infrastructure company) ke liye ek helpful helpcenter assistant hain.
 Neeche diye gaye official document context ke base par visitor ke sawal ka jawab dein.
 Agar context mein iska jawab maujood na ho, to sachai se bata dein ke ye information abhi available nahi hai — khud se kuch mat banayein.

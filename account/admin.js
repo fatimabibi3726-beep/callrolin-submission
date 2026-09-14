@@ -12,9 +12,7 @@
       return;
     }
 
-    // Verify the ROLE, not just that someone is logged in. A normal
-    // user who types this URL in manually gets bounced to their own
-    // dashboard instead of seeing admin data.
+    
     const { data: profile } = await supabaseClient
       .from("profiles")
       .select("role")
@@ -83,7 +81,7 @@
       }
     });
 
-    // Manage Admins: promote another existing user by email
+  
     const manageAdminsForm = document.getElementById("manage-admins-form");
     const manageAdminsStatus = document.getElementById("manage-admins-status");
 
@@ -124,7 +122,7 @@
       window.location.href = "/";
     });
 
-    // ---- Stats + demo requests table ----
+  
     const loadingEl = document.getElementById("admin-loading");
     const tableWrap = document.getElementById("table-wrap");
     const tableBody = document.getElementById("admin-table-body");
