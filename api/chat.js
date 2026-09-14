@@ -45,7 +45,7 @@ export default async function handler(req, res) {
 
     if (matchError) throw matchError;
 
-    // --- Step 3: Agar koi relevant chunk na mile ---
+
     if (!matches || matches.length === 0) {
       return res.status(200).json({
         answer:
@@ -54,8 +54,7 @@ export default async function handler(req, res) {
     }
 
     const context = matches.map((m) => m.content).join("\n\n---\n\n");
-
-    // --- Step 4: Gemini se jawab generate karwayein ---
+-
     const prompt = `Aap CallRolin (ek AI Voice Infrastructure company) ke liye ek helpful helpcenter assistant hain.
 Neeche diye gaye official document context ke base par visitor ke sawal ka jawab dein.
 Agar context mein iska jawab maujood na ho, to sachai se bata dein ke ye information abhi available nahi hai — khud se kuch mat banayein.
@@ -67,7 +66,7 @@ ${context}
 Visitor ka sawal: ${message}`;
 
     const response = await ai.models.generateContent({
-      model: "gemini-2.5-flash",
+      model: "gemini-3.6-flash",
       contents: prompt,
     });
 
