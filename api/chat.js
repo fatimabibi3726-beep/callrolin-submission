@@ -66,6 +66,8 @@ Neeche diye gaye official document context ke base par visitor ke sawal ka jawab
 Agar context mein iska jawab maujood na ho, to sachai se bata dein ke ye information abhi available nahi hai — khud se kuch mat banayein.
 Jawab clear, concise aur friendly tone mein dein.
 
+Bohot zaroori: Visitor jis bhi language mein sawal poochay (masalan English, Urdu, Roman Urdu, ya koi aur language), apna jawab bilkul usi language mein dein. Language khud se tabdeel na karein.
+
 Context:
 ${context}
 
