@@ -1,5 +1,4 @@
 
-
 import { GoogleGenAI } from "@google/genai";
 import { createClient } from "@supabase/supabase-js";
 
@@ -10,6 +9,7 @@ const supabase = createClient(
 );
 
 export default async function handler(req, res) {
+
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }
@@ -21,6 +21,7 @@ export default async function handler(req, res) {
   }
 
   try {
+
     const embedResult = await ai.models.embedContent({
       model: "gemini-embedding-001",
       contents: message,
@@ -31,6 +32,7 @@ export default async function handler(req, res) {
     });
     const queryEmbedding = embedResult.embeddings[0].values;
 
+  
     const { data: matches, error: matchError } = await supabase.rpc(
       "match_callrolin_documents",
       {
@@ -42,6 +44,7 @@ export default async function handler(req, res) {
 
     if (matchError) throw matchError;
 
+    
     if (!matches || matches.length === 0) {
       return res.status(200).json({
         answer:
@@ -51,12 +54,17 @@ export default async function handler(req, res) {
 
     const context = matches.map((m) => m.content).join("\n\n---\n\n");
 
-    const prompt = "Aap CallRolin (ek AI Voice Infrastructure company) ke liye ek helpful helpcenter assistant hain.\n" +
-      "Neeche diye gaye official document context ke base par visitor ke sawal ka jawab dein.\n" +
-      "Agar context mein iska jawab maujood na ho, to sachai se bata dein ke ye information abhi available nahi hai — khud se kuch mat banayein.\n" +
-      "Jawab clear, concise aur friendly tone mein dein.\n\n" +
-      "Context:\n" + context + "\n\n" +
-      "Visitor ka sawal: " + message;
+    
+    const prompt = `Aap CallRolin (ek AI Voice Infrastructure company) ke liye ek helpful helpcenter assistant hain.
+Neeche diye gaye official document context ke base par visitor ke sawal ka jawab dein.
+Agar context mein iska jawab maujood na ho, to sachai se bata dein ke ye information abhi available nahi hai — khud se kuch mat banayein.
+IMPORTANT: Visitor ne jis language mein sawal poocha hai, usi language mein jawab dein — agar sawal English mein hai to jawab bhi PURA English mein hona chahiye, agar Urdu/Roman Urdu mein hai to jawab Urdu/Roman Urdu mein hona chahiye. Languages ko mix mat karein.
+Jawab clear aur concise rakhein.
+
+Context:
+${context}
+
+Visitor ka sawal: ${message}`;
 
     const response = await ai.models.generateContent({
       model: "gemini-3.6-flash",
