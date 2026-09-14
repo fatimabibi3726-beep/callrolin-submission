@@ -1632,6 +1632,7 @@ img.brand-mark {
   font: inherit;
   cursor: pointer;
   border: none;
+  white-space: nowrap;
 }
 
 /* Fix header contrast: header is now dark, so nav text/icons need to be light */
